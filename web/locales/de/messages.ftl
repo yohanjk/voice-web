@@ -54,6 +54,7 @@ fr = Französisch
 fy-NL = Friesisch
 ga-IE = Irisch
 he = Hebräisch
+hr = Kroatisch
 hsb = Obersorbisch
 hu = Ungarisch
 ia = Interlingua
@@ -85,6 +86,7 @@ pt-BR = Portugiesisch (Brasilianisch)
 rm-sursilv = Surselvisch
 ro = Rumänisch
 ru = Russisch
+rw = Kinyarwanda
 sah = Sacha
 sc = Sardisch
 sk = Slowakisch
@@ -180,6 +182,7 @@ x-years-short =
 help-make-dataset = Helfen Sie uns, einen qualitativ hochwertigen, öffentlich zugänglichen Datensatz zu erstellen
 profile-not-required = Ein Profil ist für die Mitarbeit nicht notwendig, aber hilfreich
 sign-up-account = Ein Konto erstellen
+email-subscription-title = Abonnieren Sie Neuigkeiten per E-Mail
 
 ## Account Benefits
 
@@ -245,8 +248,10 @@ english = Englisch
 
 profile-form-username =
     .label = Benutzername
-profile-form-language =
-    .label = Sprache
+profile-form-native-language =
+    .label = Muttersprache
+profile-form-additional-language =
+    .label = Zusätzliche Sprache
 profile-form-accent =
     .label = Akzent
 profile-form-age =
@@ -390,11 +395,6 @@ data-get-started = <speechBlogLink>Erste Schritte bei der Spracherkennung</speec
 data-other-title = Andere Sprachdatensätze…
 data-other-goto = { $name } aufrufen
 data-other-download = Daten herunterladen
-data-other-librispeech-description = LibriSpeech ist ein Korpus aus ca. 1000 Stunden vorgelesener Texte in englischer Sprache (aufgenommen in 16kHz), welche ursprünglich aus Hörbüchern des LibriVox-Projektes entnommen wurden.
-data-other-ted-name = TED-LIUM-Korpus
-data-other-ted-description = Der TED-LIUM-Korpus wurde aus Audio-Vorträgen und deren Abschriften erstellt, die auf der TED-Webseite verfügbar sind.
-data-other-voxforge-description = VoxForge wurde gegründet, um Abschriften von Sprache für die Verwendung mit Freien und Open-Source-Spracherkennungen zu sammeln.
-data-other-tatoeba-description = Tatoeba ist eine umfangreiche Datenbank aus Sätzen und deren Übersetzungen und gesprochener Form (Audio) zum Sprachenlernen. Dieser Download enthält alle gesprochenen, englischen Texte, die von der dortigen Gemeinschaft aufgenommen wurden.
 data-bundle-button = Datensatz-Set herunterladen
 data-bundle-description = Common-Voice-Daten plus alle anderen, oben erwähnten Sprachdatensätze.
 license = Lizenz: <licenseLink>{ $license }</licenseLink>
@@ -410,6 +410,56 @@ review-rerecord = Korrigieren
 review-cancel = Absenden abbrechen
 review-keep-recordings = Aufnahmen behalten
 review-delete-recordings = Aufnahmen löschen
+
+## New Datasets Page
+
+datasets-headline = Wir erstellen einen mehrsprachigen, quelloffenen Datensatz aus Stimmen, mit dem jeder sprachgestützte Anwendungen trainieren kann.
+datasets-positioning =
+    Wir glauben, dass große, öffentlich verfügbare Sprachdatensätze Innovation und einen gesunden kommerziellen Wettbewerb in der Sprachtechnologie auf Basis von Maschinenlernen fördern.
+    
+    Der mehrsprachige Datensatz von Common Voice ist bereits der größte öffentlich verfügbare Sprachdatensatz seiner Art, jedoch nicht das einzige.
+    
+    Betrachten Sie diese Seite als Referenzpunkt für andere quelloffene Sprachdatensätze. Wenn Common Voice weiter wächst, finden Sie hier die neuesten Updates.
+language = Sprache
+# File size in gigabytes
+size = Größe
+validated-hr-total = Insgesamt bestätigte Stunden
+overall-hr-total = Gesamtstunden
+cv-license = Lizenz
+audio-format = Audioformat
+number-of-voices = Anzahl der Stimmen
+splits = Unterteilungen
+email-to-download = Zum Download E-Mail-Adresse eingeben
+why-email = <b>Warum eine E-Mail-Adresse?</b> Möglicherweise müssen wir Sie in Zukunft über Änderungen am Datensatz informieren. Eine E-Mail-Adresse gibt uns eine Kontaktmöglichkeit.
+confirm-size = Sie können jetzt einen Download von <b>{ $size }</b> starten
+size-gigabyte = GB
+size-megabyte = MB
+confirm-no-identify = <b>Sie stimmen zu</b>, nicht zu versuchen, die Identität der Sprecher im Common-Voice-Datensatz zu ermitteln
+download-language = { $Language } herunterladen
+validated-hours = Bestätigte Stunden
+recorded-hours = Aufgenommene Stunden
+whats-inside = Was steckt im Common-Voice-Datensatz?
+dataset-description-hours =
+    Jeder Eintrag im Datensatz besteht aus einer eindeutigen MP3- und zugehörigen Textdatei. Viele der <b>{ $total }</b> aufgezeichneten Stunden im Datensatz enthalten auch demografische Metadaten wie Alter, Geschlecht und Akzent, mit deren Hilfe die Genauigkeit von Spracherkennungs-Engines trainiert werden kann.
+    
+    Der Datensatz besteht derzeit aus <b>{ $valid }</b> bestätigten Stunden in <b>{ $languages }</b> Sprachen, aber wir fügen immer mehr Stimmen und Sprachen hinzu. Besuchen Sie unsere <languagesLink>Sprachen-Seite</languagesLink>, um eine Sprache anzufordern oder mitzumachen.
+want-dataset-update = Möchten Sie benachrichtigt werden, wenn wir eine neue Version des Common-Voice-Datensatzes veröffentlichen? Dann abonnieren Sie unseren Newsletter.
+subscribe = Abonnieren
+get-started-speech = Erste Schritte mit der Spracherkennung
+other-datasets = Andere Sprachdatensätze
+feedback-q = Möchten Sie uns etwas mitteilen?
+deepspeech-info = Der Common-Voice-Datasatz ist eine Ergänzung zu Mozillas Open-Source-Spracherkennungs-Engine Deep Speech, mit der Sie Spracherkennungsanwendungen entwickeln können. Lesen Sie unsere <githubLink>Github-Übersicht</githubLink> oder treten Sie dem <discourseLink>DeepSpeech-Forum auf Discourse</discourseLink> bei, um zu erfahren, wie die ersten Schritte ausssehen
+common-voice-info = Haben Sie Fragen zu Common Voice? Besuchen Sie unser <discourseLink>Discourse-Forum</discourseLink>.
+data-other-librispeech-description = LibriSpeech ist ein Korpus aus ca. 1000 Stunden vorgelesener Texte in englischer Sprache (aufgenommen in 16kHz), welche ursprünglich aus Hörbüchern des LibriVox-Projektes entnommen wurden.
+data-other-ted-name = TED-LIUM-Korpus
+data-other-ted-description = Der TED-LIUM-Korpus wurde aus Audio-Vorträgen und deren Abschriften erstellt, die auf der TED-Webseite verfügbar sind.
+data-other-voxforge-description = VoxForge wurde gegründet, um Abschriften von Sprache für die Verwendung mit Freien und Open-Source-Spracherkennungen zu sammeln.
+data-other-tatoeba-description = Tatoeba ist eine umfangreiche Datenbank aus Sätzen und deren Übersetzungen und gesprochener Form (Audio) zum Sprachenlernen. Dieser Download enthält alle gesprochenen, englischen Texte, die von der dortigen Gemeinschaft aufgenommen wurden.
+your-feedback = Haben Sie Ideen, wie wir den Common-Voice-Datensatz verbessern können? Sagen Sie’s uns auf Discourse.
+go-discourse = Discourse besuchen
+missing-language = Ihre Sprache fehlt noch im Datensatz? Besuchen Sie unsere Sprachen-Seite, um eine Sprache anzufordern
+go-languages-page = Sprachen-Seite besuchen
+ready-to-validate = Sind Sie bereit, um Sätze zu bestätigen?
 
 ## Download Modal
 
@@ -465,8 +515,8 @@ listen = Anhören
 skip = Überspringen
 shortcuts = Tastenkürzel
 clips-with-count = <bold>{ $count }</bold> Aufzeichnungen
-goal-help-recording = Sie haben Common Voice geholfen, <goalPercentage></goalPercentage> des heutigen Aufzeichnungsziels »{ $goalValue }« zu erreichen!
-goal-help-validation = Sie haben Common Voice geholfen, <goalPercentage></goalPercentage> des heutigen Bestätigungsziels »{ $goalValue }« zu erreichen!
+goal-help-recording = Sie haben Common Voice geholfen, <goalPercentage></goalPercentage> des heutigen Aufzeichnungsziels von { $goalValue } zu erreichen!
+goal-help-validation = Sie haben Common Voice geholfen, <goalPercentage></goalPercentage> des heutigen Bestätigungsziels von { $goalValue } zu erreichen!
 contribute-more = Bereit { $count } weitere zu machen?
 record-cta = Aufnehmen
 record-platform-not-supported = Es tut uns leid, Ihre Plattform wird derzeit nicht unterstützt.
@@ -546,4 +596,8 @@ keep = Erhalten
 remove = Löschen
 keep-info = Ihre anonymen Stimmaufzeichnungen verbleiben im Common-Voice-Datensatz. Nachdem Sie Ihr Profil gelöscht haben, können Sie die Löschung Ihrer Aufzeichnungen aus dem Datensatz nicht mehr beantragen.
 remove-info = Wir werden Ihre Anfrage zur Löschung Ihrer Stimmaufzeichnungen aus dem Datensatz prüfen. Wenn Ihrer Anfrage stattgegeben wird, kontaktieren wir diejenigen, die den Datensatz heruntergeladen haben, und fordern diese auf, Ihre Aufzeichnungen ebenfalls zu entfernen.
+why-delete-recordings =
+    Common-Voice-Aufnahmen werden von Akademikern, kleinen Unternehmen und Enthusiasten zur Spracherkennung verwendet, um öffentlich verfügbare Ressourcen wie Sprachmodelle zu trainieren und zu erweitern.
+    
+    Können Sie uns mitteilen, warum Sie Ihre Aufnahmen löschen möchten?
 profile-form-delete = Profil löschen

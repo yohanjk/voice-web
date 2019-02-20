@@ -17,8 +17,11 @@ indicates-required = * Wajib diisi
 
 ## Languages
 
+ab = Abkhaz
 ace = Bahasa Aceh
+ady = Adyghe
 af = Bahasa Afrikaans
+am = Amharic
 an = Bahasa Aragon
 ar = Bahasa Arab
 as = Bahasa Assam
@@ -37,6 +40,7 @@ cy = Bahasa Wales
 da = Bahasa Denmark
 de = Bahasa Jerman
 dsb = Bahasa Sorbia Hilir
+dv = Dhivehi
 el = Bahasa Yunani
 en = Bahasa Inggris
 eo = Bahasa Esperanto
@@ -65,8 +69,10 @@ kpv = Bahasa Komi-Zyrian
 kw = Bahasa Kornish
 ky = Bahasa Kirgiz
 mdf = Bahasa Moksha
+mhr = Meadow Mari
 mk = Bahasa Makedonia
 mn = Bahasa Mongol
+mrj = Hill Mari
 myv = Bahasa Erzya
 nb-NO = Bahasa Bokmal (Norwegia)
 ne-NP = Bahasa Nepal
@@ -91,10 +97,13 @@ te = Bahasa Telugu
 th = Bahasa Thai
 tr = Bahasa Turki
 tt = Bahasa Tatar
+uby = Ubykh
+udm = Udmurt
 uk = Bahasa Ukraina
 ur = Bahasa Urdu
 uz = Bahasa Uzbek
 vi = Bahasa Vietnam
+vot = Votik
 zh-CN = Bahasa Tionghoa (Tiongkok)
 zh-HK = Bahasa Tiongkok (Hong Kong)
 zh-TW = Bahasa Tionghoa (Taiwan)
@@ -174,9 +183,12 @@ sign-up-account = Daftarkan akun
 ## Account Benefits
 
 benefits = Manfaat
+join-newsletter = Bergabunglah dengan sukarela di daftar surel kami untuk pembaruan dan informasi baru tentang proyek ini.
 
 ## What's public
 
+email-not-public = Kami tidak akan mempublikasikan surel Anda.
+username-optin-public = Anda dapat memilih untuk menjadikan nama pengguna Anda publik atau anonim.
 
 ## Speak & Listen Shortcuts
 
@@ -222,8 +234,6 @@ english = Bahasa Inggris
 
 profile-form-username =
     .label = Nama Pengguna
-profile-form-language =
-    .label = Bahasa
 profile-form-accent =
     .label = Logat
 profile-form-age =
@@ -298,11 +308,11 @@ faq-what-quality-q = Berapa tingkat kualitas audio yang diperlukan untuk klip su
 faq-why-10k-hours-a = Kira-kira inilah jumlah waktu yang dibutuhkan untuk melatih sistem ucapan-ke-teks produksi.
 faq-how-calc-hours-q = Bagaimana Common Voice menghitung jumlah jam?
 faq-how-calc-hours-a = Kami menghitung jam dengan memperkirakan panjang rata-rata setiap rekaman, kemudian mengalikan angka tersebut dengan jumlah total rekaman di semua bahasa.
-faq-where-src-from-q = Dari mana asal teks sumbernya?
-faq-where-src-from-a =
-    Teks sumber kami terdiri dari donasi kontributor tulen serta dialog dari naskah film domain publik seperti <italic>It is a Wonderful Life </italic>.
+faq-where-src-from-2-q = Dari mana asal teks sumbernya?
+faq-where-src-from-2-a =
+    Teks sumber kami terdiri dari donasi kontributor asli serta dialog dari naskah film domain publik seperti <italic>It's a Wonderful Life </italic>.
     
-    Anda dapat melihat kalimat sumber kami di folder GitHub ini.
+    Anda dapat melihat kalimat sumber kami di <githubLink>folder GitHub</githubLink> ini.
 faq-why-not-ask-read-q = Mengapa Anda tidak meminta orang untuk membaca dari buku atau artikel Wikipedia dalam bahasa yang berbeda?
 faq-why-account-q = Mengapa saya harus mendaftar akun?
 faq-is-account-public-q = Apakah informasi akun saya bersifat publik?
@@ -339,11 +349,6 @@ data-get-started = <speechBlogLink>Mulailah dengan Pengenalan Suara</speechBlogL
 data-other-title = Himpunan data suara lainnya...
 data-other-goto = Kunjungi { $name }
 data-other-download = Unduh Data
-data-other-librispeech-description = LibriSpeech adalah sebuah korpus berdurasi sekitar 1000 jam dengan pembacaan teks berbahasa Inggris dalam frekuensi 16Khz yang berasal dari pembacaan buku audio dari proyek LibriVox.
-data-other-ted-name = TED-LIUM Corpus
-data-other-ted-description = Korpus TED-LIUM dibangun dari perbincangan audio dan naskah salinannya yang tersedia di situs web TED.
-data-other-voxforge-description = VoxForge dibangun untuk mengumpulkan naskah salinan pembicaraan untuk digunakan dengan Mesin Pengenalan Suara Sumber Terbuka dan Gratis.
-data-other-tatoeba-description = Tatoeba adalah basis data besar kalimat, terjemahan, dan audio tuturan guna pembelajaran bahasa. Unduhan ini berisi seluruh tuturan bahasa Inggris yang direkam oleh komunitas mereka.
 data-bundle-button = Unduh Bundel Himpunan Data
 data-bundle-description = Data Common Voice dan seluruh himpunan data suara lain di atas.
 license = Lisensi: <licenseLink>{ $license }</licenseLink>
@@ -359,6 +364,21 @@ review-rerecord = Merekam Ulang
 review-cancel = Batalkan Pengajuan
 review-keep-recordings = Simpan rekaman
 review-delete-recordings = Hapus rekaman saya
+
+## New Datasets Page
+
+language = Bahasa
+# File size in gigabytes
+size = Ukuran
+cv-license = Lisensi
+audio-format = Format Audio
+size-gigabyte = GB
+size-megabyte = MB
+data-other-librispeech-description = LibriSpeech adalah sebuah korpus berdurasi sekitar 1000 jam dengan pembacaan teks berbahasa Inggris dalam frekuensi 16Khz yang berasal dari pembacaan buku audio dari proyek LibriVox.
+data-other-ted-name = TED-LIUM Corpus
+data-other-ted-description = Korpus TED-LIUM dibangun dari perbincangan audio dan naskah salinannya yang tersedia di situs web TED.
+data-other-voxforge-description = VoxForge dibangun untuk mengumpulkan naskah salinan pembicaraan untuk digunakan dengan Mesin Pengenalan Suara Sumber Terbuka dan Gratis.
+data-other-tatoeba-description = Tatoeba adalah basis data besar kalimat, terjemahan, dan audio tuturan guna pembelajaran bahasa. Unduhan ini berisi seluruh tuturan bahasa Inggris yang direkam oleh komunitas mereka.
 
 ## Download Modal
 

@@ -17,8 +17,11 @@ indicates-required = * Indică un câmp obligatoriu
 
 ## Languages
 
+ab = Abhază
 ace = Acehneză
+ady = Adyghe
 af = Afrikaans
+am = Amharică
 an = Aragoneză
 ar = Arabă
 as = Assameză
@@ -37,6 +40,7 @@ cy = Galeză
 da = Daneză
 de = Germană
 dsb = Sorbenă de jos
+dv = Dhivehi
 el = Greacă
 en = Engleză
 eo = Esperanto
@@ -65,8 +69,10 @@ kpv = Komi-ziriană
 kw = Cornică
 ky = Kirghiză
 mdf = Moksha
+mhr = Mari de est
 mk = Macedoneană
 mn = Mongolă
+mrj = Mari de vest
 myv = Erzya
 nb-NO = Norvegiană (Bokmål)
 ne-NP = Nepaleză
@@ -91,10 +97,13 @@ te = Telugu
 th = Thailandeză
 tr = Turcă
 tt = Tătară
+uby = Ubykhă
+udm = Udmurtă
 uk = Ucraineană
 ur = Urdu
 uz = Uzbecă
 vi = Vietnameză
+vot = Votică
 zh-CN = Chineză (China)
 zh-HK = Chineză (Hong Kong)
 zh-TW = Chineză (Taiwan)
@@ -240,8 +249,10 @@ english = Engleză
 
 profile-form-username =
     .label = Nume de utilizator
-profile-form-language =
-    .label = Limbă
+profile-form-native-language =
+    .label = Limba maternă
+profile-form-additional-language =
+    .label = Limbă suplimentară
 profile-form-accent =
     .label = Accent
 profile-form-age =
@@ -308,25 +319,47 @@ faq-what-cv-a =
     
     Nu colectăm eșantioane de voce numai în limbi de largă circulație, ci și în limbi cu un număr mai mic de vorbitori. Publicarea unui set de date divers de voci va permite dezvoltatorilor, antreprenorilor și comunităților să abordeze chiar ei acest gol. În plus față de setul de date Common Voice, construim și un motor de recunoaștere vocală cu sursă deschisă, denumit Deep Speech.
 faq-why-important-q = De ce este important?
+faq-why-important-a =
+    Vorbirea este cea mai naturală cale prin care comunicăm unii cu ceilalți și tehnologiile vocale ne aduc acest confort pe calculatoare și dispozitive mobile. Vrem să dăm dezvoltatorilor capacitatea de a putea construi aplicații grozave de recunoaștere vocală cum ar fi aplicații de traducere în timp real și asistenți vocali cu comandă vocală. Dar chiar acum cea mai mare parte a datelor vocale necesare pentru construirea acestor tipuri de aplicații sunt scumpe și proprietare. Sperăm ca setul de date Common Voice să le dea dezvoltatorilor ceea ce au nevoie pentru inovație și pentru a face tehnologia de recunoaștere vocală disponibilă în limbile lor.
+    Pentru a crește nivelul de universalitate al recunoașterii vocale, colectăm mostre de voce în limbi de largă circulație, precum și în limbi vorbite de populații mai mici, adesea prea puțin deservite de serviciile comerciale de recunoaștere vocală. Publicarea unui set divers de date vocale va permite dezvoltatorilor, antreprenorilor și unor comunități lingvistice întregi să umple acest gol.
 faq-how-get-q = Cum pot obține datele Common Voice?
+faq-how-get-a = Setul de date Common Voice este disponibil pentru descărcare sub licență <licenseLink>CC0</licenseLink> de pe <datasetLink>pagina noastră de seturi de date</datasetLink>. De pe pagina respectivă puteți descărca și alte seturi de date disponibile publicului.
 faq-when-release-q = Când veți lansa datele Common Voice în alte limbi?
+faq-when-release-a = Versiunea multilingvistică a setului de date Common Voice este în prezent supusă procesului de împachetare și ordonare realizat de comunitate. Dacă vrei să afli mai multe despre susținerea acestui efort,  <contactLink>contactează-ne</contactLink>. Data preconizată acum pentru publicare este undeva în ianuarie 2019. După aceea, vom actualiza periodic setul de date cu limbi și videoclipuri noi pe măsură ce vor deveni disponibile. Urmează să determinăm un interval de publicare periodică.
 faq-why-mission-q = De ce face parte Common Voice din misiunea Mozilla?
 faq-why-mission-a = Mozilla este dedicată păstrării webului deschis și accesibil tuturor. În acest sens, trebuie să împuternicim creatorii web prin proiecte așa cum este Common Voice. Deoarece tehnologiile vocale se extind dincolo de aplicațiile de nișă, credem că trebuie să deservească toți utilizatorii în mod egal. Aceasta înseamnă investiții în mai multe limbi și includerea de accente și date demografice diverse în construcția și testarea tehnologiilor vocale. Common Voice este o resursă publică disponibilă tuturor, iar echipele și dezvoltatorii Mozilla din întreaga lume o utilizează deja în proiectele noastre proprii.
 faq-what-cv-and-deepspeech-q = Care este diferența dintre Common Voice și Deep Speech?
+faq-what-cv-and-deepspeech-a = Setul de date Common Voice este complementar motorului de recunoaștere vocală cu sursă deschisă de la Mozilla - Deep Speech. Prima versiune Deep Speech a fost lansată în noiembrie 2017 și a continuat să evolueze de atunci încoace. Împreună cu setul de date Common Voice, considerăm că această tehnologie de recunoaștere vocală cu sursă deschisă trebuie să fie disponibilă tuturor. Sperăm ca aceste tehnologii să permită dezvoltatorilor construirea unui val de produse și servicii inovatoare.
 faq-is-goal-assistant-q = Obiectivul Common Voice este de a construi un asistent vocal?
+faq-is-goal-assistant-a = Obiectivul setului de date Common Voice este de a permite oricui din lume să construiască aplicații de recunoaștere vocală, de recunoaștere a vorbitorului sau orice alt tip de aplicații care necesită date de voce. Un asistent vocal reprezintă doar unul dintre numeroasele tipuri de aplicații care s-ar putea folosi de seturile de date.
 faq-do-want-native-q = Nu sunt vorbitor nativ și am accent, vreți oricum vocea mea?
+faq-do-want-native-a = Da, vrem mai ales vocea ta! O parte a scopului Common Voice este să colecteze cât mai multe accente diferite posibil astfel încât serviciile de recunoaștere vocală să funcționeze la fel de bine pentru toți. Aceasta înseamnă că donațiile de la vorbitorii nenativi prezintă o importanță deosebită.
 faq-why-different-speakers-q = De ce aveți nevoie de atât de mulți vorbitori diferiți pe fiecare limbă?
+faq-why-different-speakers-a = Cele mai multe seturi de date vocale sunt construite cu o suprareprezentare a anumitor date demografice, ceea ce conduce la o favorizare a <articleLink>bărbaților și a clasei de mijloc</articleLink>. Accentele și dialectele care tind să fie subreprezentate în seturile de date vocale sunt în mod tipic asociate cu grupuri de persoane deja marginalizate. Multe mașini încă înțeleg cu greu vocile feminine. De aceea vrem varietate în baza noastră de date vocale!
 faq-why-my-lang-q = De ce limba mea nu este încă inclusă?
+faq-why-my-lang-a = Mozilla nu alege și nu favorizează nicio limbă față de altele. În schimb, Common Voice este o inițiativă integral controlată de comunitate, dar este nevoie de <multilangLink>mai multe etape pentru adăugarea unei limbi noi</multilangLink> și începerea colectării donațiilor de voce. Mai întâi, trebuie tradus site-ul web Common Voice astfel încât membrii comunității să poată accesa contribuțiile în limba lor. Apoi, avem nevoie de o colecție mare de propoziții negrevate de drepturi de reproducere pe care persoanele să le citească cu voce tare. Odată satisfăcute aceste două cerințe, limba nouă este „lansată” pe Common Voice și colaboratorii pot începe să își înregistreze vocile și să valideze donațiile celorlalți.
 faq-what-quality-q = Ce nivel de calitate audio este necesar pentru ca o secvență audio să fie utilizată în setul de date?
+faq-what-quality-a = Vrem ca setul de date Common Voice să reflecte calitatea audio cu care un motor de recunoaștere vocală se va confrunta în realitate, așa că vrem varietate. În plus față de diversitatea comunității de vorbitori, un set de date cu o calitate audio variabilă va ajuta motorul de recunoaștere vocală să învețe să gestioneze variate situații din lumea reală, de la vorbire în fundal până la zgomote de autovehicule. Atât timp cât secvența ta audio este inteligibilă, înseamnă că este suficient de bună pentru adăugarea în setul de date.
 faq-why-10k-hours-q = De ce obiectivul de 10.000 de ore validate de capturi audio pe fiecare limbă?
 faq-why-10k-hours-a = Este numărul aproximativ de ore necesare pentru formarea unui sistem de producție de recunoaștere vocală.
 faq-how-calc-hours-q = Cum calculează Common Voice orele?
 faq-how-calc-hours-a = Calculăm orele estimând lungimea medie a fiecărei înregistrări și înmulțind numărul respectiv cu numărul total de înregistrări în toate limbile.
 faq-where-src-from-2-q = De unde provine textul-sursă?
+faq-where-src-from-2-a =
+    Textele noastre sursă sunt alcătuite din donații originale de la colaboratori, precum și dialoguri din scenarii de filme din domeniul public precum <italic>It’s a Wonderful Life</italic>.
+    
+    Ne poți vedea propozițiile-sursă în acest <githubLink>dosar de pe GitHub</githubLink>.
 faq-why-not-ask-read-q = De ce nu cereți oamenilor să citească din cărți sau articole Wikipedia în diferite limbi?
+faq-why-not-ask-read-a = Pentru a face setul de date Common Voice cât mai util posibil, am decis să permitem numai texte-sursă disponibile sub o licență Creative Commons (CC0). Folosirea standardului CC0 înseamnă că este mai dificil de găsit și colectat texte-sursă, dar permite oricui să folosească datele vocale rezultate fără restricții de utilizare sau autorizare din partea Mozilla. În final, vrem să facem setul de date multilingvistic cât mai util posibil pentru oricine, inclusiv pentru cercetători, universități, startup-uri, autorități guvernamentale, organizații cu scopuri sociale și ca hobby.
 faq-why-account-q = De ce trebuie să-mi creez un cont?
 faq-is-account-public-q = Informațiile contului meu sunt publice?
 faq-how-privacy-q = Cum asigurați anonimatul și intimitatea persoanelor care și-au donat vocea?
+faq-how-privacy-a = Toate datele cu caracter personal care permit identificarea sunt eliminate din toate secvențele vocale. Când un colaborator furnizează date demografice prin intermediul profilului, aceste informații sunt „dezidentificate” din secvențele vocale înainte de împachetarea pentru descărcare în setul de date și nu sunt niciodată făcute publice pe pagina de profil.
+faq-what-determine-identity-q = Ce înseamnă că nu pot „determina identitatea” vorbitorilor în setul de date Common Voice?
+faq-what-determine-identity-a =
+    Setul de date Common Voice este o resursă deschisă și accesibilă publicului care poate fi utilizată pentru o largă varietate de aplicații cu comandă vocală. Pentru a proteja securitatea colaboratorilor noștri, am cerut tuturor celor care descarcă setul de date Common Voice să respecte viața privată a colaboratorilor noștri.
+    
+    Toate datele cu caracter personal care permit identificarea sunt eliminate din secvențele vocale din setul de date. La descărcarea setului de date, agreați să nu încercați să determinați identitatea niciunui colaborator. Aceasta înseamnă că nu vi se permite să încercați să legați informații din setul de date cu datele cu caracter personal ale unui colaborator. Dar vi se permite să folosiți setul de date pentru „instruirea” aplicațiilor de recunoaștere vocală, de recunoaștere a vorbitorului sau a altor aplicații de exemplu prin corelarea informațiilor din setul de date cu alte informații deja existente în setul de date.
 
 ## Glossary
 
@@ -336,8 +369,11 @@ localization-explanation = Acesta este procesul nostru de traducere și adaptare
 sentence-collection = Colecție de fraze
 sentence-collection-explanation = Colectarea frazelor din domeniul public sau scrierea de fraze noi pentru domeniul public.
 hours-recorded-explanation = Numărul de ore de înregistrare vocală pe care le-am colectat până acum.
+hours-validated-explanation = Numărul de ore de înregistrare vocală care au fost validate de 2 din 3 utilizatori cu un vot „Da". Acestea marchează avansul către obiectivul general al proiectului de 10k ore.
 sst = Recunoaștere vocală (Speech-to-text, STT)
+sst-explanation = Tehnologiile de recunoaștere vocală (Speech-to-text (STT)) convertesc datele vocale în texte.
 de-identified = Anominizat
+de-identified-explanation = Procesul prin care informațiile de profil ale unui colaborator devin ilizibile în secvențele vocale donate când sunt împachetate pentru descărcare ca parte a setului de date.
 
 ## NotFound
 
@@ -377,6 +413,39 @@ review-rerecord = Înregistrează din nou
 review-cancel = Anulează trimiterea
 review-keep-recordings = Păstrează înregistrările
 review-delete-recordings = Șterge înregistrările mele
+
+## New Datasets Page
+
+datasets-headline = Construim un set de date multilingv, cu sursă deschisă, cu voci pe care oricine le poate utiliza pentru antrenarea aplicațiilor cu comandă vocală.
+datasets-positioning =
+    Considerăm că seturile mari de date vocale disponibile public vor stimula inovația și concurența comercială sănătoasă în tehnologia vocală bazată pe învățarea mașinilor a modului cum vorbesc oamenii.
+    
+    Setul multilingvistic de date Common Voice este deja cel mai mare set de date vocale de acest gen pus la dispoziția publicului, dar nu este singurul.
+    
+    Consideră această pagină ca un centru de referință pentru alte seturi de date vocale cu sursă deschisă și, pe măsură ce Common Voice continuă să crească, ca pe o pagină de start pentru actualizările noastre.
+language = Limbă
+# File size in gigabytes
+size = Mărime
+validated-hr-total = Total ore validate
+overall-hr-total = Total general ore
+cv-license = Licență
+audio-format = Format audio
+number-of-voices = Număr de voci
+splits = Diviziuni
+email-to-download = Introdu adresa de e-mail pentru a descărca
+why-email = <b>De ce adresa de e-mail?</b> Este posibil să trebuiască să te contactăm mai târziu cu referire la modificări aduse setului de date. Adresa de e-mail va servi ca punct de contact.
+confirm-size = Ești gata să inițiezi o descărcare de <b>{ $size }</b>
+size-gigabyte = GB
+size-megabyte = MB
+confirm-no-identify = <b>Agreezi</b> să nu încerci să determini identitatea vorbitorilor din setul de date Common Voice
+download-language = Descarcă { $language }
+validated-hours = Ore validate
+recorded-hours = Ore înregistrate
+whats-inside = Ce se găsește în setul de date Common Voice?
+dataset-description =
+    Fiecare intrare din setul de date constă dintr-un MP3 unic și fișierul text corespondent. Multe dintre cele <b>{ $hours }</b> de ore înregistrate din setul de date includ și metadate demografice, precum vârstă, sex și accent, care ajută la antrenarea pentru acuratețe a motoarelor de recunoaștere vocală.
+    
+    Setul de date constă în prezent din <b>{ $hours }</b> de ore validate în <b>{ $languageCount }</b> de limbi, dar adăugăm constant mai multe voci și limbi. Aruncă o privire pe <languagesLink>Pagina de limbi</languagesLink> ca să soliciți o limbă sau ca să începi să contribui și tu.
 
 ## Download Modal
 
@@ -521,4 +590,8 @@ keep = Păstrează
 remove = Elimină
 keep-info = Înregistrările tale anonime de voce vor rămâne în setul de date Common Voice. Odată șters profilul, nu vei mai putea să depui o cerere pentru eliminarea lor din setul de date
 remove-info = Îți vom analiza cererea de eliminare a înregistrărilor tale de voce din setul de date. Dacă cererea va fi aprobată, îi vom contacta pe cei care au descărcat setul de date și le vom cere să îți elimine și ei înregistrările de voce.
+why-delete-recordings =
+    Înregistrările Common Voice sunt utilizate de profesori și cercetători, afaceri mici și amatori de tehnologie de recunoaștere vocală care ajută la instruirea și dezvoltarea de resurse disponibile pentru public, precum modelele vocale.
+    
+    Poți să ne spui de ce vrei să îți ștergem înregistrările?
 profile-form-delete = Șterge profilul

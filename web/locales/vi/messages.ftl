@@ -54,6 +54,7 @@ fr = Tiếng Pháp
 fy-NL = Tiếng Frisia
 ga-IE = Tiếng Ireland
 he = Tiếng Do Thái
+hr = Tiếng Croatia
 hsb = Tiếng Sorb vùng Thượng
 hu = Tiếng Hungary
 ia = Tiếng Khoa học Quốc tế
@@ -85,6 +86,7 @@ pt-BR = Tiếng Bồ Đào Nha (Brazil)
 rm-sursilv = Tiếng Romansh Sursilva
 ro = Tiếng Rumani
 ru = Tiếng Nga
+rw = Tiếng Kinyarwanda
 sah = Tiếng Sakha
 sc = Tiếng Sardinia
 sk = Tiếng Slovakia
@@ -177,6 +179,7 @@ x-years-short =
 help-make-dataset = Hãy giúp chúng tôi xây dựng một bộ dữ liệu công khai, chất lượng cao
 profile-not-required = Có một hồ sơ là không cần thiết để đóng góp mặc dù nó rất hữu ích
 sign-up-account = Đăng kí một tài khoản
+email-subscription-title = đăng ký nhận email cập nhật
 
 ## Account Benefits
 
@@ -241,8 +244,10 @@ english = Tiếng Anh
 
 profile-form-username =
     .label = Tên đăng nhập
-profile-form-language =
-    .label = Ngôn ngữ
+profile-form-native-language =
+    .label = Ngôn ngữ chính
+profile-form-additional-language =
+    .label = Ngôn ngữ bổ sung
 profile-form-accent =
     .label = Giọng vùng miền
 profile-form-age =
@@ -379,18 +384,13 @@ data-download-button = Tải dữ liệu Common Voice
 data-download-yes = Có
 data-download-deny = Không
 data-download-license = Giấy phép: <licenseLink>CC-0</licenseLink>
-data-download-modal = Bạn sắp tải xuống <size>{ $size }GB</size>, tiếp tục?
+data-download-modal = Bạn sắp tải xuống mục này có dung lượng <size>{ $size }GB</size>, tiếp tục?
 data-subtitle = Chúng tôi đang xây dựng một bộ dữ liệu giọng nói mở và công khai mà mọi người có thể sử dụng để đào tạo các ứng dụng hỗ trợ giọng nói.
 data-explanatory-text = Chúng tôi tin rằng bộ dữ liệu giọng nói khổng lồ và công khai có sẵn sẽ thúc đẩy đổi mới và cạnh tranh thương mại lành mạnh về lĩnh vực công nghệ giọng nói dựa trên máy học. Đây là một nỗ lực toàn cầu và chúng tôi mời mọi người tham gia. Mục tiêu của chúng tôi là giúp công nghệ giọng nói trở nên hòa nhập hơn, phản ánh sự đa dạng của tiếng nói từ khắp nơi trên thế giới.
 data-get-started = <speechBlogLink>Bắt đầu với nhận dạng giọng nói</speechBlogLink>
 data-other-title = Bộ dữ liệu giọng nói khác…
 data-other-goto = Đi đến { $name }
 data-other-download = Tải dữ liệu
-data-other-librispeech-description = LibriSpeech là một kho tàng khoảng 1000 giờ của 16Khz bài phát biểu tiếng Anh có nguồn gốc từ các audiobook từ dự án LibriVox.
-data-other-ted-name = TED-LIUM Corpus
-data-other-ted-description = TED-LIUM corpus được tạo từ các cuộc nói chuyện, và các bản ghi chép của họ có sẵn trên trang web của TED.
-data-other-voxforge-description = VoxForge được thiết lập để thu thập câu nói được chép lại để sử dụng với Hệ thống nhận dạng giọng nói miễn phí và nguồn mở.
-data-other-tatoeba-description = Tatoeba là một cơ sở dữ liệu lớn gồm các câu, bản dịch và bản nói chuyện để sử dụng trong việc học ngôn ngữ. Bản tải xuống này chứa tiếng Anh được ghi bởi cộng đồng của họ.
 data-bundle-button = Tải Gói dữ liệu xuống
 data-bundle-description = Dữ liệu Common Voice cộng với tất cả các bộ dữ liệu giọng nói khác ở trên.
 license = Giấy phép: <licenseLink>{ $license }</licenseLink>
@@ -406,6 +406,56 @@ review-rerecord = Ghi lại
 review-cancel = Hủy gửi
 review-keep-recordings = Giữ bản ghi âm
 review-delete-recordings = Xóa bản ghi âm của tôi
+
+## New Datasets Page
+
+datasets-headline = Chúng tôi đã xây dựng một bộ dữ liệu giọng nói đa ngôn ngữ mã nguồn mở mà bất kỳ ai cũng có thể sử dụng để huấn luyện các ứng dụng hỗ trợ giọng nói.
+datasets-positioning =
+    Chúng tôi tin rằng các bộ dữ liệu giọng nói lớn, có sẵn công khai sẽ thúc đẩy sự đổi mới và cạnh tranh thương mại lành mạnh trong công nghệ lời nói dựa trên máy học.
+    
+    Bộ dữ liệu đa ngôn ngữ của Common Voice đã là bộ dữ liệu giọng nói có sẵn công khai lớn nhất thuộc loại này, nhưng nó không phải là bộ dữ liệu duy nhất.
+    
+    Hãy xem trang này như một trung tâm tham chiếu cho các bộ dữ liệu giọng nói nguồn mở khác và, khi Common Voice tiếp tục phát triển, một ngôi nhà cho các bản cập nhật phát hành của chúng tôi.
+language = Ngôn ngữ
+# File size in gigabytes
+size = Kích thước
+validated-hr-total = Tổng số giờ đã xác nhận
+overall-hr-total = Tổng số giờ
+cv-license = Giấy phép
+audio-format = Định dạng âm thanh
+number-of-voices = Số lượng tiếng nói
+splits = Tách
+email-to-download = Nhập email để tải xuống
+why-email = <b>Tại sao lại cần email?</b> Chúng tôi có thể cần liên hệ với bạn trong tương lai về các thay đổi đối với tập dữ liệu, một email cung cấp cho chúng tôi một điểm liên hệ.
+confirm-size = Bạn đã sẵn sàng để bắt đầu tải xuống <b>{ $size }</b>
+size-gigabyte = GB
+size-megabyte = MB
+confirm-no-identify = <b>Bạn đồng ý</b> về việc không cố gắng xác định danh tính của người nói trong bộ dữ liệu Common Voice
+download-language = Tải xuống { $language }
+validated-hours = Số giờ đã xác thực
+recorded-hours = Số giờ đã ghi âm
+whats-inside = Những gì bên trong bộ dữ liệu Common Voice?
+dataset-description-hours =
+    Mỗi mục trong bộ dữ liệu bao gồm một tệp MP3 duy nhất và tệp văn bản tương ứng. <b>{ $total }</b> giờ được ghi trong tập dữ liệu cũng bao gồm siêu dữ liệu nhân khẩu học như tuổi, giới tính và giọng nói có thể giúp rèn luyện tính chính xác của các công cụ nhận dạng giọng nói.
+    
+    Bộ dữ liệu hiện bao gồm <b>{ $valid }</b> giờ được xác thực bằng <b>{ $languages }</b> ngôn ngữ , nhưng chúng tôi luôn luôn thêm nhiều tiếng nói và ngôn ngữ. Hãy xem <languagesLink>trang ngôn ngữ</languagesLink> của chúng tôi để yêu cầu ngôn ngữ hoặc bắt đầu đóng góp.
+want-dataset-update = Muốn cập nhật khi chúng tôi phát hành phiên bản mới của bộ dữ liệu Common Voice? Đăng kí theo dõi bản tin của chúng tôi.
+subscribe = Đăng kí
+get-started-speech = Bắt đầu với nhận dạng giọng nói
+other-datasets = Bộ dữ liệu thoại khác
+feedback-q = Có phản hồi?
+deepspeech-info = Bộ dữ liệu Common Voice bổ sung cho công cụ nhận dạng giọng nói mã nguồn mở Mozilla, Deep Speech, mà bạn có thể sử dụng để xây dựng các ứng dụng nhận dạng giọng nói. Đọc <githubLink>tổng quan về Github</githubLink> của chúng tôi hoặc tham gia <discourseLink>diễn ngôn DeepSpeech</discourseLink> để tìm hiểu cách bắt đầu.
+common-voice-info = Có câu hỏi nào về Common Voice? Tham gia trên <discourseLink>diễn đàn Discourse</discourseLink>.
+data-other-librispeech-description = LibriSpeech là một kho tàng khoảng 1000 giờ của 16Khz bài phát biểu tiếng Anh có nguồn gốc từ các audiobook từ dự án LibriVox.
+data-other-ted-name = TED-LIUM Corpus
+data-other-ted-description = TED-LIUM corpus được tạo từ các cuộc nói chuyện, và các bản ghi chép của họ có sẵn trên trang web của TED.
+data-other-voxforge-description = VoxForge được thiết lập để thu thập câu nói được chép lại để sử dụng với Hệ thống nhận dạng giọng nói miễn phí và nguồn mở.
+data-other-tatoeba-description = Tatoeba là một cơ sở dữ liệu lớn gồm các câu, bản dịch và bản nói chuyện để sử dụng trong việc học ngôn ngữ. Bản tải xuống này chứa tiếng Anh được ghi bởi cộng đồng của họ.
+your-feedback = Bạn có ý tưởng về cách chúng tôi có thể làm cho bộ dữ liệu Common Voice tốt hơn không? Hãy cho chúng tôi biết trên Discourse
+go-discourse = Đi đến Discourse
+missing-language = Không thấy ngôn ngữ của bạn được phản ánh trong bộ dữ liệu? Để yêu cầu một ngôn ngữ hãy đi đến trang ngôn ngữ của chúng tôi.
+go-languages-page = Đi đến trang ngôn ngữ
+ready-to-validate = Sẵn sàng để giúp xác nhận các câu?
 
 ## Download Modal
 
@@ -542,4 +592,8 @@ keep = Giữ
 remove = Xóa
 keep-info = Bản ghi âm ẩn danh của bạn sẽ vẫn còn trong bộ dữ liệu Thoại thông thường. Khi bạn xóa tiểu sử của mình, bạn sẽ không còn có thể gửi yêu cầu xóa bản ghi của mình khỏi tập dữ liệu nữa
 remove-info = Chúng tôi sẽ xem xét yêu cầu xóa bản ghi âm của bạn khỏi tập dữ liệu. Nếu yêu cầu của bạn được chấp thuận, chúng tôi sẽ liên hệ với những người đã tải xuống tập dữ liệu và yêu cầu họ xóa bản ghi âm của bạn.
+why-delete-recordings =
+    Common Voice được sử dụng bởi các học giả, doanh nghiệp nhỏ và những người đam mê nhận dạng giọng nói để giúp đào tạo và phát triển các tài nguyên công khai như mô hình giọng nói.
+    
+    Bạn có thể cho chúng tôi biết lý do tại sao bạn muốn xóa bản ghi của mình không?
 profile-form-delete = Xóa hồ sơ

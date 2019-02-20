@@ -54,6 +54,7 @@ fr = francuski
 fy-NL = fryzyjski
 ga-IE = irlandzki
 he = hebrajski
+hr = chorwacki
 hsb = górnołużycki
 hu = węgierski
 ia = interlingua
@@ -85,6 +86,7 @@ pt-BR = portugalski (Brazylia)
 rm-sursilv = retoromański (sursilvan)
 ro = rumuński
 ru = rosyjski
+rw = kinyarwanda
 sah = jakucki
 sc = sardyński
 sk = słowacki
@@ -115,7 +117,7 @@ zh-TW = chiński (Tajwan)
 
 speak = Nagrywaj
 speak-now = Wymów teraz
-datasets = Zestawy danych
+datasets = Zbiory danych
 languages = Języki
 profile = Profil
 help = Pomoc
@@ -148,7 +150,7 @@ vote-yes = Tak
 vote-no = Nie
 toggle-play-tooltip = Naciśnij { shortcut-play-toggle }, aby zmienić tryb odtwarzania
 speak-subtitle = Nagraj swój głos
-speak-paragraph = Nagrywanie jest integralną częścią budowania naszego otwartego zestawu danych. Niektórzy twierdzą, że to ta fajna część.
+speak-paragraph = Nagrywanie jest integralną częścią budowania naszego otwartego zbioru danych. Niektórzy twierdzą, że to ta fajna część.
 speak-goal-text = Nagrane
 listen-subtitle = Pomóż nam sprawdzić nagrania
 listen-paragraph = Sprawdzanie nagrań jest równie ważne dla misji projektu Common Voice. Posłuchaj i pomóż nam utworzyć dane głosowe open source wysokiej jakości.
@@ -180,12 +182,17 @@ x-years-short =
         [few] { $count } lata
        *[other] { $count } lat
     }
+help-make-dataset = Pomóż nam zbudować wysokiej jakości, publicznie otwarty zbiór danych
+profile-not-required = Profil nie jest wymagany do wzięcia udziału, ale się przydaje
+sign-up-account = Zarejestruj konto
 
 ## Account Benefits
 
+benefits = Korzyści
 
 ## What's public
 
+whats-public = Co jest publiczne?
 
 ## Speak & Listen Shortcuts
 
@@ -233,8 +240,10 @@ english = angielski
 
 profile-form-username =
     .label = Nazwa użytkownika
-profile-form-language =
-    .label = Język
+profile-form-native-language =
+    .label = Język ojczysty
+profile-form-additional-language =
+    .label = Dodatkowy język
 profile-form-accent =
     .label = Akcent
 profile-form-age =
@@ -295,9 +304,15 @@ change-email-setings = Zmień swój adres e-mail w ustawieniach tożsamości lo
 ## FAQ
 
 faq-title = Często zadawane pytania
+faq-what-cv-q = Czym jest Common Voice?
+faq-why-important-q = Dlaczego to jest ważne?
+faq-why-account-q = Po co mam zarejestrować konto?
 
 ## Glossary
 
+glossary = Glosariusz
+localization = Lokalizacja
+sentence-collection = Zbieranie zdań
 
 ## NotFound
 
@@ -317,12 +332,7 @@ data-get-started = <speechBlogLink>Pierwsze kroki z rozpoznawaniem mowy</speech
 data-other-title = Inne zbiory danych…
 data-other-goto = Przejdź do { $name }
 data-other-download = Pobierz dane
-data-other-librispeech-description = LibriSpeech to zbiór około 1000 godzin angielskiej mowy w jakości 16 KHz, z tekstów audiobooków z projektu LibriVox.
-data-other-ted-name = Zbiór TED-LIUM
-data-other-ted-description = Zbiór TED-LIUM został utworzony z nagrań przemów i ich transkrypcji dostępnych na stronie konferencji TED.
-data-other-voxforge-description = VoxForge został stworzony w celu zbierania transkrybowanej mowy do użytku z wolnymi i otwartymi silnikami rozpoznawania mowy.
-data-other-tatoeba-description = Tatoeba jest wielką bazą danych zdań, tłumaczeń i mowy do użytku w nauczaniu maszynowym. Ten plik zawiera wszystkie angielskie nagrania mowy stworzone przez ich społeczność.
-data-bundle-button = Pobierz zestaw danych
+data-bundle-button = Pobierz zbiór danych
 data-bundle-description = Dane Common Voice ze wszystkimi innymi zbiorami danych powyżej.
 license = Licencja: <licenseLink>{ $license }</licenseLink>
 license-mixed = Mieszana
@@ -337,6 +347,36 @@ review-rerecord = Nagraj ponownie
 review-cancel = Anuluj wysyłanie
 review-keep-recordings = Zachowaj nagrania
 review-delete-recordings = Usuń moje nagrania
+
+## New Datasets Page
+
+language = Język
+# File size in gigabytes
+size = Rozmiar
+validated-hr-total = Razem sprawdzonych godzin
+overall-hr-total = Razem godzin
+cv-license = Licencja
+audio-format = Format dźwięku
+number-of-voices = Liczba głosów
+splits = Podziały
+email-to-download = Wpisz adres e-mail, aby pobrać
+why-email = <b>Dlaczego adres e-mail?</b> Być może będziemy musieli skontaktować się z Tobą w przyszłości w sprawie zmian w zbiorze danych.
+confirm-size = Pobranie <b>{ $size }</b> jest gotowe do rozpoczęcia
+size-gigabyte = GB
+size-megabyte = MB
+confirm-no-identify = <b>Zgadzasz się</b>, że nie będziesz próbować ustalać tożsamości osób mówiących w zbiorze danych Common Voice
+download-language = Pobierz język: { $language }
+validated-hours = Sprawdzone godziny
+recorded-hours = Nagrane godziny
+subscribe = Subskrybuj
+other-datasets = Inne zbiory danych
+data-other-librispeech-description = LibriSpeech to zbiór około 1000 godzin angielskiej mowy w jakości 16 KHz, z tekstów audiobooków z projektu LibriVox.
+data-other-ted-name = Zbiór TED-LIUM
+data-other-ted-description = Zbiór TED-LIUM został utworzony z nagrań przemów i ich transkrypcji dostępnych na stronie konferencji TED.
+data-other-voxforge-description = VoxForge został stworzony w celu zbierania transkrybowanej mowy do użytku z wolnymi i otwartymi silnikami rozpoznawania mowy.
+data-other-tatoeba-description = Tatoeba jest wielką bazą danych zdań, tłumaczeń i mowy do użytku w nauczaniu maszynowym. Ten plik zawiera wszystkie angielskie nagrania mowy stworzone przez ich społeczność.
+go-discourse = Przejdź do serwisu Discourse
+go-languages-page = Przejdź do listy języków
 
 ## Download Modal
 
@@ -471,9 +511,9 @@ overall-accuracy = Ogólna dokładność
 
 ## Profile Delete
 
-delete-q = Czy chcesz poprosić o usunięcie także Twoich nagrań, czy wolisz zachować je w zestawie danych Common Voice?
+delete-q = Czy chcesz poprosić o usunięcie także Twoich nagrań, czy wolisz zachować je w zbiorze danych Common Voice?
 keep = Zachowaj
 remove = Usuń
-keep-info = Twoje anonimowe nagrania pozostaną w zestawie danych Common Voice. Po usunięciu profilu nie będzie już można wysłać prośby o ich usunięcie
-remove-info = Zweryfikujemy Twoją prośbę o usunięcie nagrań z zestawu danych. Jeśli zostanie zatwierdzona, skontaktujemy się z tymi, którzy pobrali zestaw i poprosimy ich o usunięcie Twoich nagrań.
+keep-info = Twoje anonimowe nagrania pozostaną w zbiorze danych Common Voice. Po usunięciu profilu nie będzie już można wysłać prośby o ich usunięcie
+remove-info = Zweryfikujemy Twoją prośbę o usunięcie nagrań ze zbioru danych. Jeśli zostanie zatwierdzona, skontaktujemy się z tymi, którzy pobrali zbiór i poprosimy ich o usunięcie Twoich nagrań.
 profile-form-delete = Usuń profil

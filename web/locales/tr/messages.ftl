@@ -17,8 +17,10 @@ indicates-required = * Gerekli alanları gösterir
 
 ## Languages
 
+ab = Abhazca
 ace = Açece
 af = Afrikaans
+am = Amharca
 an = Aragonca
 ar = Arapça
 as = Assamca
@@ -91,10 +93,12 @@ te = Telugu
 th = Tayca
 tr = Türkçe
 tt = Tatarca
+udm = Udmurtça
 uk = Ukraynaca
 ur = Urduca
 uz = Özbekçe
 vi = Vietnamca
+vot = Votic
 zh-CN = Çince (Çin)
 zh-HK = Çince (Hong Kong)
 zh-TW = Çince (Tayvan)
@@ -234,8 +238,10 @@ english = İngilizce
 
 profile-form-username =
     .label = Kullanıcı adı
-profile-form-language =
-    .label = Dil
+profile-form-native-language =
+    .label = Anadili
+profile-form-additional-language =
+    .label = Ek dil
 profile-form-accent =
     .label = Aksan
 profile-form-age =
@@ -309,6 +315,8 @@ faq-how-privacy-q = Seslerini bağışlayan kişilerin anonimliğini ve gizlili�
 
 glossary = Sözlük
 localization = Yerelleştirme
+sst = Konuşmadan metne (STT)
+sst-explanation = Konuşmadan metne (STT) teknolojileri ses verilerini metne dönüştürür.
 
 ## NotFound
 
@@ -328,11 +336,6 @@ data-get-started = <speechBlogLink>Konuşma tanımayı keşfedin</speechBlogLink
 data-other-title = Diğer ses verisi kümeleri…
 data-other-goto = { $name } sitesine git
 data-other-download = Verileri indir
-data-other-librispeech-description = LibriSpeech, LibriVox projesinin sesli kitaplarından elde edilen yaklaşık 1000 saatlik 16 Khz'lik sesli okunmuş İngilizce metinlerden oluşan bir korpustur.
-data-other-ted-name = TED-LIUM Korpusu
-data-other-ted-description = TED-LIUM korpusu, TED web sitesindeki sunum ses kayıtları ve onların deşifre metinleri kullanılarak oluşturulmuştur.
-data-other-voxforge-description = VoxForge, Özgür ve Açık Kaynaklı Konuşma Tanıma Motorları ile kullanım için okunmuş metinler toplamak üzere kuruldu.
-data-other-tatoeba-description = Tatoeba, dil öğrenmede kullanılmak üzere geniş bir cümle, çeviri ve konuşma veritabanıdır. Bu dosya, Tatoeba gönüllüleri tarafından kaydedilen İngilizce konuşmaları içerir.
 data-bundle-button = Veri kümesi paketini indir
 data-bundle-description = Common Voice verileri ve yukarıdaki diğer tüm ses veri kümeleri.
 license = Lisans: <licenseLink>{ $license }</licenseLink>
@@ -348,6 +351,24 @@ review-rerecord = Yeniden kaydet
 review-cancel = Gönderimi iptal et
 review-keep-recordings = Kayıtları tut
 review-delete-recordings = Kayıtlarımı sil
+
+## New Datasets Page
+
+language = Dil
+# File size in gigabytes
+size = Boyut
+cv-license = Lisans
+audio-format = Ses biçimi
+email-to-download = İndirmek için e-postanızı yazın
+size-gigabyte = GB
+size-megabyte = MB
+download-language = { $language } indir
+subscribe = Abone ol
+data-other-librispeech-description = LibriSpeech, LibriVox projesinin sesli kitaplarından elde edilen yaklaşık 1000 saatlik 16 Khz'lik sesli okunmuş İngilizce metinlerden oluşan bir korpustur.
+data-other-ted-name = TED-LIUM Korpusu
+data-other-ted-description = TED-LIUM korpusu, TED web sitesindeki sunum ses kayıtları ve onların deşifre metinleri kullanılarak oluşturulmuştur.
+data-other-voxforge-description = VoxForge, Özgür ve Açık Kaynaklı Konuşma Tanıma Motorları ile kullanım için okunmuş metinler toplamak üzere kuruldu.
+data-other-tatoeba-description = Tatoeba, dil öğrenmede kullanılmak üzere geniş bir cümle, çeviri ve konuşma veritabanıdır. Bu dosya, Tatoeba gönüllüleri tarafından kaydedilen İngilizce konuşmaları içerir.
 
 ## Download Modal
 

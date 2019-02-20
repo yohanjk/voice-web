@@ -144,7 +144,10 @@ class LanguagesPage extends React.PureComponent<Props, State> {
   toggleShowAllInProgress = () => {
     this.setState(state => {
       const showAllInProgress = !state.showAllInProgress;
-      trackLanguages(showAllInProgress ? 'see-more' : 'see-less');
+      trackLanguages(
+        showAllInProgress ? 'see-more' : 'see-less',
+        this.props.locale
+      );
       return { showAllInProgress };
     });
   };
@@ -152,7 +155,10 @@ class LanguagesPage extends React.PureComponent<Props, State> {
   toggleShowAllLaunched = () => {
     this.setState(state => {
       const showAllLaunched = !state.showAllLaunched;
-      trackLanguages(showAllLaunched ? 'see-more' : 'see-less');
+      trackLanguages(
+        showAllLaunched ? 'see-more' : 'see-less',
+        this.props.locale
+      );
       return { showAllLaunched };
     });
   };
@@ -173,6 +179,7 @@ class LanguagesPage extends React.PureComponent<Props, State> {
   };
 
   handleQueryChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const { getString } = this.props;
     const { inProgress, launched, selectedSection } = this.state;
     const query = event.target.value;
 
@@ -181,7 +188,10 @@ class LanguagesPage extends React.PureComponent<Props, State> {
         ? languages.filter(({ locale }: any) => {
             const q = query.toLowerCase();
             return (
-              locale.toLowerCase().includes(q) ||
+              locale.includes(q) ||
+              getString(locale)
+                .toLowerCase()
+                .includes(q) ||
               (NATIVE_NAMES[locale] || '').toLowerCase().includes(q)
             );
           })
@@ -259,7 +269,10 @@ class LanguagesPage extends React.PureComponent<Props, State> {
                   outline
                   rounded
                   onClick={() => {
-                    trackLanguages('open-request-language-modal');
+                    trackLanguages(
+                      'open-request-language-modal',
+                      this.props.locale
+                    );
                     this.setState({ showLanguageRequestModal: true });
                   }}
                 />

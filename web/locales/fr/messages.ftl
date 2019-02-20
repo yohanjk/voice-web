@@ -155,8 +155,8 @@ speak-goal-text = Échantillons enregistrés
 listen-subtitle = Aidez-nous à valider les échantillons vocaux
 listen-paragraph = La validation des échantillons vocaux donnés est également importante pour la mission Common Voice. Prenez l’écoute et aidez-nous à créer des données vocales libres de qualité.
 listen-goal-text = Extraits validés
-hours-recorded = Heures d’enregistrement
-hours-validated = Heures validées
+hours-recorded = Heures d’enregistrement 
+hours-validated = Heures validées 
 voices-online = Échantillons de voix maintenant en ligne
 todays-progress = Progression du jour
 help-reach-goal = Aidez-nous à atteindre { $goal }
@@ -247,8 +247,10 @@ english = Anglais
 
 profile-form-username =
     .label = Nom d’utilisateur
-profile-form-language =
-    .label = Langue
+profile-form-native-language =
+    .label = Langue maternelle
+profile-form-additional-language =
+    .label = Langue supplémentaire
 profile-form-accent =
     .label = Accent
 profile-form-age =
@@ -360,15 +362,15 @@ faq-what-determine-identity-a =
 ## Glossary
 
 glossary = Glossaire
-localization = Localisation
+localization = Localisation 
 localization-explanation = Il s’agit de notre processus pour traduire et adapter le contenu à de nombreuses langues.
-sentence-collection = Collecte de phrases
+sentence-collection = Collecte de phrases 
 sentence-collection-explanation = Collecter des phrases qui sont dans le domaine public, ou en écrire de nouvelles qui seront dans le domaine public.
-hours-recorded-explanation = La quantité d’heures d’enregistrements vocaux que nous avons collecté jusqu’à présent.
+hours-recorded-explanation = La quantité d’heures d’enregistrements vocaux que nous avons collectés jusqu’à présent.
 hours-validated-explanation = La quantité d’heures d’enregistrements vocaux qui ont été validées par au moins deux ou trois utilisateurs qui ont voté « Oui ». Cela dénote les progrès quant à l’objectif de 10 000 heures du projet.
-sst = Reconnaissance vocale (Speech-to-text, STT)
+sst = Reconnaissance vocale (Speech-to-text, STT) 
 sst-explanation = La reconnaissance vocale (STT) convertit de la voix en texte.
-de-identified = Dé-identifié
+de-identified = Dé-identifié 
 de-identified-explanation = Processus permettant de séparer les informations personnelles des contributeurs de leurs échantillons lors de la préparation du jeu de données.
 
 ## NotFound
@@ -389,11 +391,6 @@ data-get-started = <speechBlogLink>S’initier à la reconnaissance vocale</spee
 data-other-title = Autres jeux de données…
 data-other-goto = Voir { $name }
 data-other-download = Télécharger les données
-data-other-librispeech-description = LibriSpeech est un corpus d’environ 1000 heures de lecture en anglais (16 kHz) issu de livres audio du projet LibriVox.
-data-other-ted-name = Corpus TED-LIUM
-data-other-ted-description = Le corpus TED-LIUM est construit à partir des dialogues audio et de leurs transcriptions disponibles sur le site TED.
-data-other-voxforge-description = VoxForge a été construit pour collecter des transcriptions vocales pour les utiliser dans des moteurs de reconnaissance vocale libres.
-data-other-tatoeba-description = Tatoeba est une immense base de données de phrases, de traductions et d’extraits audio destinés à l’apprentissage des langues. Ce téléchargement contient toutes les données en anglais enregistrées par leur communauté.
 data-bundle-button = Télécharger un lot de jeux de données
 data-bundle-description = Données Common Voice ainsi que tous les autres jeux de données ci-dessus.
 license = Licence : <licenseLink>{ $license }</licenseLink>
@@ -409,6 +406,42 @@ review-rerecord = Réenregistrer
 review-cancel = Annuler l’envoi
 review-keep-recordings = Conserver les enregistrements
 review-delete-recordings = Supprimer les enregistrements
+
+## New Datasets Page
+
+datasets-headline = Nous créons un jeu de données vocales open source et multilingue que tout le monde peut utiliser pour entraîner des applications utilisant la voix.
+language = Langue
+# File size in gigabytes
+size = Taille
+validated-hr-total = Total d’heures validées
+overall-hr-total = Total d’heures
+cv-license = Licence
+audio-format = Format audio
+number-of-voices = Nombre de voix
+email-to-download = Saisissez votre adresse électronique pour accéder au téléchargement
+why-email = <b>Pourquoi demandons-nous l’adresse électronique ?</b> Nous aurons peut-être besoin de vous contacter plus tard pour des modifications du jeu de données, votre adresse électronique nous le permettra.
+confirm-size = Vous vous apprêtez à lancer un téléchargement de <b>{ $size }</b>
+size-gigabyte = Go
+size-megabyte = Mo
+confirm-no-identify = <b>Vous acceptez</b> de ne pas essayer de découvrir l’identité des locuteurs du jeu de données de Common Voice.
+download-language = Télécharger | { $language }
+validated-hours = Heures validées
+recorded-hours = Heures enregistrées
+whats-inside = Que contient le jeu de données Common Voice ?
+dataset-description =
+    Chaque entrée du jeu de données consiste en un seul fichier MP3 et le fichier du texte correspondant. Beaucoup des <b>{ $hours }</b> heures enregistrées dans le jeu de données comprennent également des métadonnées démographiques, telles que l’âge, le sexe et l’accent, qui peuvent contribuer à améliorer la précision des moteurs de reconnaissance vocale.
+    
+    Le jeu de données contient actuellement  <b>{ $hours }</b> heures validées dans <b>{ $languageCount }</b> langues, mais nous ajoutons en permanence plus de voix et de langues. Jetez un œil à la <languagesLink>page des langues</languagesLink> pour demander une langue ou commencer à contribuer.
+subscribe = S’abonner
+get-started-speech = S’initier à la reconnaissance vocale
+feedback-q = Vous avez des suggestions ?
+common-voice-info = Vous avez des questions à propos de Common Voice ? Rejoignez-nous sur le forum <discourseLink>Discourse</discourseLink>.
+data-other-librispeech-description = LibriSpeech est un corpus d’environ 1000 heures de lecture en anglais (16 kHz) issu de livres audio du projet LibriVox.
+data-other-ted-name = Corpus TED-LIUM
+data-other-ted-description = Le corpus TED-LIUM est construit à partir des dialogues audio et de leurs transcriptions disponibles sur le site TED.
+data-other-voxforge-description = VoxForge a été construit pour collecter des transcriptions vocales pour les utiliser dans des moteurs de reconnaissance vocale libres.
+data-other-tatoeba-description = Tatoeba est une immense base de données de phrases, de traductions et d’extraits audio destinés à l’apprentissage des langues. Ce téléchargement contient toutes les données en anglais enregistrées par leur communauté.
+your-feedback = Vous avez des idées pour améliorer le jeu de données Common Voice ? Faites-le-nous savoir sur Discourse
 
 ## Download Modal
 
@@ -443,8 +476,8 @@ language-section-in-progress = En cours
 language-section-in-progress-description = Les langues « en cours » sont celles sur lesquelles nos communautés travaillent ; leur progrès correspond à l’avancement de la traduction du site web et à l’avancement de la collecte de phrases.
 language-section-launched = Lancées
 language-section-launched-new-description = Pour ces langues activées, le site web a été complètement traduit et assez de phrases ont été collectées pour permettre des contributions de <italic>voix</italic> et d’<italic>écoute</italic>.
-languages-show-more = Afficher davantage de langues
-languages-show-less = Afficher moins de langues
+languages-show-more = Afficher davantage
+languages-show-less = Afficher moins
 language-speakers = Locuteurs et locutrices
 language-meter-in-progress = En cours
 language-total-progress = Total
@@ -545,4 +578,8 @@ keep = Les conserver
 remove = Les supprimer
 keep-info = Vos enregistrements vocaux anonymes resteront dans le jeu de données Common Voice. Une fois que vous avez supprimé votre profil, vous ne pourrez plus envoyer de requête pour supprimer vos enregistrements du jeu de données.
 remove-info = Nous allons étudier votre requête pour retirer vos enregistrements vocaux du jeu de données. Si votre demande est acceptée, nous contacterons ceux qui ont téléchargé le jeu de données et leur demanderons de le faire également.
+why-delete-recordings =
+    Les universitaires, les petites entreprises et les passionnés de reconnaissance vocale utilisent les enregistrements Common Voice pour entraîner et développer des ressources accessibles au public, telles que des modèles vocaux.
+    
+    Pourriez-vous nous indiquer pourquoi vous souhaitez supprimer vos enregistrements ?
 profile-form-delete = Supprimer le profil

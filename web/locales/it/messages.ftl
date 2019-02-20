@@ -40,6 +40,7 @@ cy = Gallese
 da = Danese
 de = Tedesco
 dsb = Basso sorabo
+dv = Maldiviano
 el = Greco
 en = Inglese
 eo = Esperanto
@@ -242,8 +243,10 @@ english = Inglese
 
 profile-form-username =
     .label = Nome utente
-profile-form-language =
-    .label = Lingua
+profile-form-native-language =
+    .label = Lingua nativa
+profile-form-additional-language =
+    .label = Altra lingua
 profile-form-accent =
     .label = Accento
 profile-form-age =
@@ -382,11 +385,6 @@ data-get-started = <speechBlogLink>Istruzioni per il riconoscimento vocale</spee
 data-other-title = Altri dataset vocali...
 data-other-goto = Vai a { $name }
 data-other-download = Scarica i dati
-data-other-librispeech-description = LibriSpeech è un corpus contenente circa 1000 ore di registrazioni in lingua inglese a 16Khz tratto dalla lettura di audiolibri del progetto LibriVox.
-data-other-ted-name = TED-LIUM Corpus
-data-other-ted-description = Il corpus TED-LIUM è realizzato con registrazioni audio di conferenze e relative trascrizioni disponibili sul sito TED.
-data-other-voxforge-description = VoxForge è stato creato appositamente per raccogliere trascrizioni di dettati da utilizzare nei motori di riconoscimento vocale gratuiti e open source.
-data-other-tatoeba-description = Tatoeba è un ampio database che raccoglie frasi, traduzioni e registrazioni vocali per scopi di apprendimento linguistico. Il presente download contiene tracce audio di inglese parlato registrato dalla comunità di Tatoeba.
 data-bundle-button = Scarica bundle di dataset
 data-bundle-description = Dati di Common Voice più tutti i dataset precedenti.
 license = Licenza: <licenseLink>{ $license }</licenseLink>
@@ -402,6 +400,55 @@ review-rerecord = Registra di nuovo
 review-cancel = Annulla invio
 review-keep-recordings = Conserva le registrazioni
 review-delete-recordings = Cancella le mie registrazioni
+
+## New Datasets Page
+
+datasets-headline = Stiamo realizzando un dataset di voci multilingua e open source che chiunque può utilizzare per migliorare applicazioni munite riconoscimento vocale.
+datasets-positioning =
+    Crediamo che mettere in circolazione dataset di voci pubblici di grandi dimensioni possa promuovere innovazione e sana concorrenza commerciale tra le tecnologie di apprendimento automatico basate sul riconoscimento vocale.
+    
+    Il dataset multilingue di Common Voice è già il più grande del suo genere disponibile pubblicamente, ma non è l’unico.
+    
+    Considera questa pagina come un punto di riferimento per dataset open source e, man mano che Common Voice continua a crescere, una pagina per i nostri aggiornamenti.
+language = Lingua
+# File size in gigabytes
+size = Dimensione
+validated-hr-total = Totale ore convalidate
+overall-hr-total = Totale ore complessive
+cv-license = Licenza
+audio-format = Formato audio
+number-of-voices = Numero di voci
+splits = Divisioni
+email-to-download = Inserisci la tua email per iniziare il download
+why-email = <b>Perché devo dare il mio indirizzo email?</b> Servirà come contatto a cui inviarti informazioni su eventuali future modifiche ai dataset.
+confirm-size = Sei pronto per iniziare un download di <b>{ $size }</b>
+size-gigabyte = GB
+size-megabyte = MB
+confirm-no-identify = <b>Accetti</b> di rinunciare a determinare l’identità dei parlanti presenti nel dataset di Common Voice
+download-language = Scarica { $language }
+validated-hours = Ore convalidate
+recorded-hours = Ore registrate
+whats-inside = Che cosa c’è all’interno del dataset di Common Voice?
+dataset-description =
+    Ogni voce nel dataset è composta da un singolo MP3 e dal file di testo corrispondente. Molte delle <b>{ $hours }</b> ore registrate nel dataset includono anche metadati demografici come età, sesso e accento, che possono aiutare ad affinare l'accuratezza dei motori di riconoscimento vocale.
+    Il dataset al momento comprende <b>{ $hours }</b> ore convalidate in <b>{ $languageCount }</b> lingue, ma viene costantemente aggiornato con nuove voci e lingue. Dai un’occhiata alla nostra <languagesLink>pagina delle lingue</languagesLink> per richiedere una nuova lingua o iniziare a collaborare.
+want-dataset-update = Vuoi ricevere aggiornamenti sulle nuove versioni del dataset di Common Voice? Iscriviti alla newsletter.
+subscribe = Iscriviti
+get-started-speech = Inizia con il riconoscimento vocale
+other-datasets = Altri dataset vocali
+feedback-q = Hai suggerimenti?
+deepspeech-info = Il dataset di Common Voice integra il motore di riconoscimento vocale open source di Mozilla, Deep Speech, utilizzabile per creare applicazioni di riconoscimento vocale. Leggi la <githubLink>panoramica GitHub</githubLink> o unisciti a <discourseLink>DeepSpeech su Discourse</discourseLink> per sapere come cominciare.
+common-voice-info = Hai domande su Common Voice? Unisciti al nostro <discourseLink>forum su Discourse</discourseLink>.
+data-other-librispeech-description = LibriSpeech è un corpus contenente circa 1000 ore di registrazioni in lingua inglese a 16Khz tratto dalla lettura di audiolibri del progetto LibriVox.
+data-other-ted-name = TED-LIUM Corpus
+data-other-ted-description = Il corpus TED-LIUM è realizzato con registrazioni audio di conferenze e relative trascrizioni disponibili sul sito TED.
+data-other-voxforge-description = VoxForge è stato creato appositamente per raccogliere trascrizioni di dettati da utilizzare nei motori di riconoscimento vocale gratuiti e open source.
+data-other-tatoeba-description = Tatoeba è un ampio database che raccoglie frasi, traduzioni e registrazioni vocali per scopi di apprendimento linguistico. Il presente download contiene tracce audio di inglese parlato registrato dalla comunità di Tatoeba.
+your-feedback = Hai idee su come migliorare il dataset di Common Voice? Faccelo sapere su Discourse
+go-discourse = Vai su Discourse
+missing-language = Non trovi la tua lingua nel dataset? Per richiederne una, vai sulla pagina Lingue.
+go-languages-page = Vai sulla pagina Lingue
+ready-to-validate = Sei pronto a convalidare qualche frase?
 
 ## Download Modal
 
@@ -538,4 +585,8 @@ keep = Mantieni
 remove = Rimuovi
 keep-info = Le tue registrazioni vocali anonime rimarranno nel dataset di Common Voice e, una volta eliminato il tuo profilo, non potrai più inviare una richiesta per rimuoverle.
 remove-info = Esamineremo la tua richiesta di rimozione delle registrazioni vocali dal dataset. Se la richiesta verrà approvata, contatteremo chi ha scaricato il dataset e chiederemo di rimuovere le tue registrazioni vocali.
+why-delete-recordings =
+    Le registrazioni di Common Voice sono utilizzate da studiosi, piccole imprese e appassionati di riconoscimento vocale per perfezionare e far crescere risorse disponibili pubblicamente come i modelli vocali.
+    
+    Puoi spiegarci per quale motivo desideri cancellare le tue registrazioni?
 profile-form-delete = Elimina profilo

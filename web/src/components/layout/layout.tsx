@@ -71,15 +71,11 @@ class Layout extends React.PureComponent<LayoutProps, LayoutState> {
 
   componentDidMount() {
     this.scroller.addEventListener('scroll', this.handleScroll);
-    setTimeout(() => {
-      import('../pages/contribution/speak/speak');
-      import('../pages/contribution/listen/listen');
-    }, 1000);
     this.visitHash(this.props);
   }
 
   componentDidUpdate(nextProps: LayoutProps, nextState: LayoutState) {
-    if (this.props.location !== nextProps.location) {
+    if (this.props.location.pathname !== nextProps.location.pathname) {
       this.setState({ isMenuVisible: false });
 
       // Immediately scrolling up after page change has no effect.

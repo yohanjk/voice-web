@@ -17,8 +17,11 @@ indicates-required = * Indica un camp necessari
 
 ## Languages
 
+ab = abkhaz
 ace = atjeh
+ady = adigué
 af = afrikaans
+am = amhàric
 an = aragonès
 ar = àrab
 as = assamès
@@ -37,6 +40,7 @@ cy = gal·lès
 da = danès
 de = alemany
 dsb = baix sòrab
+dv = divehi
 el = grec
 en = anglès
 eo = esperanto
@@ -65,8 +69,10 @@ kpv = komi
 kw = còrnic
 ky = kirguís
 mdf = mokxa
+mhr = mari oriental
 mk = macedònic
 mn = mongol
+mrj = mari occidental
 myv = mordovià erza
 nb-NO = Bokmål noruec
 ne-NP = nepalès
@@ -91,10 +97,13 @@ te = telugu
 th = tailandès
 tr = turc
 tt = tàtar
+uby = ubikh
+udm = udmurt
 uk = ucraïnès
 ur = urdú
 uz = uzbek
 vi = vietnamita
+vot = vòtic
 zh-CN = xinès (Xina)
 zh-HK = xinès (Hong Kong)
 zh-TW = xinès (Taiwan)
@@ -234,8 +243,10 @@ english = anglès
 
 profile-form-username =
     .label = Nom d'usuari
-profile-form-language =
-    .label = Llengua
+profile-form-native-language =
+    .label = Llengua materna
+profile-form-additional-language =
+    .label = Llengua addicional
 profile-form-accent =
     .label = Accent
 profile-form-age =
@@ -274,7 +285,7 @@ accept-privacy = Accepto que gestioneu aquesta informació en els termes descrit
 login-identity = Identitat d'inici de sessió
 login-signup = Inici de sessió / Registre
 edit = Edita
-email-subscriptions = Subscripcions per correu electrónic
+email-subscriptions = Subscripcions per correu electrònic
 download-profile = Baixa les meves dades
 contribution-experience = Experiència de la col·laboració
 skip-submission-feedback = Omet l'enviament de comentaris
@@ -297,6 +308,7 @@ add-language = Afegeix una llengua
 faq-title = Preguntes més freqüents
 faq-what-cv-q = Què és el Common Voice?
 faq-why-important-q = Per què és important?
+faq-how-calc-hours-q = Com calcula les hores el Common Voice?
 
 ## Glossary
 
@@ -330,11 +342,6 @@ data-get-started = <speechBlogLink>Primers passos en el reconeixement de la veu<
 data-other-title = Altres conjunts de dades de veu…
 data-other-goto = Vés a { $name }
 data-other-download = Baixa les dades
-data-other-librispeech-description = LibriSpeech és un corpus d'aproximadament 1.000 hores de diàlegs en anglès llegits a 16 KHz derivat de la lectura d'audiollibres del projecte LibriVox.
-data-other-ted-name = Corpus de TED-LIUM
-data-other-ted-description = El corpus de TED-LIUM es va crear a partir d'enregistraments d'àudio i llurs transcripcions disponibles en el lloc web de TED.
-data-other-voxforge-description = VoxForge es va crear per recollir transcripcions de diàlegs que es puguin utilitzar en motors de reconeixement de la veu de codi obert.
-data-other-tatoeba-description = Tatoeba és una gran base de dades de frases, traduccions i enregistraments d'àudio per a l'ús en l'aprenentatge de llengües. Aquesta baixada conté tots els enregistraments d'anglès parlat fets per la comunitat.
 data-bundle-button = Baixa el paquet del conjunt de dades
 data-bundle-description = Dades del Common Voice més tots els conjunts de dades de veu anteriors.
 license = Llicència: <licenseLink>{ $license }</licenseLink>
@@ -350,6 +357,46 @@ review-rerecord = Torna a enregistrar
 review-cancel = Cancel·la l'enviament
 review-keep-recordings = Conserva els enregistraments
 review-delete-recordings = Suprimeix els meus enregistraments
+
+## New Datasets Page
+
+language = Llengua
+# File size in gigabytes
+size = Mida
+validated-hr-total = Hores validades totals
+overall-hr-total = Hores totals
+cv-license = Llicència
+audio-format = Format d'àudio
+number-of-voices = Nombre de veus
+splits = Divisions
+email-to-download = Introduïu l'adreça electrònica per baixar
+why-email = <b>Per què una adreça electrònica?</ b> És una forma de contacte en cas que ens haguéssim de posar en contacte en un futur per canvis en el conjunt de dades.
+confirm-size = Esteu preparat per iniciar una baixada de <b>{ $size }</ b>
+size-gigabyte = GB
+size-megabyte = MB
+confirm-no-identify = <b>Accepteu</ b> no intentar determinar la identitat dels parlants del conjunt de dades del Common Voice
+download-language = Baixa { $language }
+validated-hours = Hores validades
+recorded-hours = Hores enregistrades
+whats-inside = Què inclou el conjunt de dades de veu?
+dataset-description =
+    Cada entrada del conjunt de dades consisteix en un únic MP3 i el fitxer de text corresponent. Moltes de les <b>{ $hours }</b> hores registrades del conjunt de dades també inclouen metadades demogràfiques, com l'edat, el sexe i l'accent, que poden ajudar a millorar la precisió dels motors de reconeixement de veu.
+    
+    Actualment, el conjunt de dades inclou <b>{ $hours }</b> hores validades en <b>{ $languageCount }</b> llengües, però constantment s'hi van afegint més veus i llengües. Visiteu la <languagesLink>pàgina Llengües</languagesLink> per sol·licitar una llengua o per començar a col·laborar.
+want-dataset-update = Voleu rebre actualitzacions quan publiquem una nova versió del conjunt de dades del Common Voice? Subscriviu-vos al nostre butlletí.
+subscribe = Subscriu-m'hi
+get-started-speech = Introducció al reconeixement de veu
+other-datasets = Altres conjunts de dades de veu
+feedback-q = Teniu algun comentari?
+deepspeech-info = El conjunt de dades del Common Voice complementa el motor de reconeixement de veu de codi obert Deep Speech de Mozilla, que podeu utilitzar per crear aplicacions de reconeixement de veu. Llegiu-ne la <githubLink>descripció general al Github</githubLink> o visiteu el <discourseLink>fòrum DeepSpeech al Discourse</discourseLink> per obtenir informació sobre com començar.
+common-voice-info = Teniu preguntes sobre el Common Voice? Visiteu el nostre <discourseLink>fòrum al Discourse</discourseLink>.
+data-other-librispeech-description = LibriSpeech és un corpus d'aproximadament 1.000 hores de diàlegs en anglès llegits a 16 KHz derivat de la lectura d'audiollibres del projecte LibriVox.
+data-other-ted-name = Corpus de TED-LIUM
+data-other-ted-description = El corpus de TED-LIUM es va crear a partir d'enregistraments d'àudio i llurs transcripcions disponibles en el lloc web de TED.
+data-other-voxforge-description = VoxForge es va crear per recollir transcripcions de diàlegs que es puguin utilitzar en motors de reconeixement de la veu de codi obert.
+data-other-tatoeba-description = Tatoeba és una gran base de dades de frases, traduccions i enregistraments d'àudio per a l'ús en l'aprenentatge de llengües. Aquesta baixada conté tots els enregistraments d'anglès parlat fets per la comunitat.
+your-feedback = Teniu idees sobre com millorar el conjunt de dades del Common Voice? Feu-nos-ho saber al Discourse
+go-discourse = Vés al Discourse
 
 ## Download Modal
 

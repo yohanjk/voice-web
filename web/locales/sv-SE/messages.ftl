@@ -54,6 +54,7 @@ fr = Franska
 fy-NL = Frisiska
 ga-IE = Irländska
 he = Hebreiska
+hr = Kroatiska
 hsb = Högsorbiska
 hu = Ungerska
 ia = Interlingua
@@ -85,6 +86,7 @@ pt-BR = Portugisiska (Brasilien)
 rm-sursilv = Rätoromanska
 ro = Rumänska
 ru = Ryska
+rw = Kinyarwanda
 sah = Sakha
 sc = Sardiska
 sk = Slovakiska
@@ -183,6 +185,7 @@ x-years-short =
 help-make-dataset = Hjälp oss bygga en högkvalitativ, öppen datamängd
 profile-not-required = Det behövs ingen profil för att bidra, men det underlättar
 sign-up-account = Registrera dig för ett konto
+email-subscription-title = registrera dig för uppdateringar via e-post
 
 ## Account Benefits
 
@@ -248,8 +251,10 @@ english = Engelska
 
 profile-form-username =
     .label = Användarnamn
-profile-form-language =
-    .label = Språk
+profile-form-native-language =
+    .label = Modersmål
+profile-form-additional-language =
+    .label = Ytterligare språk
 profile-form-accent =
     .label = Dialekt
 profile-form-age =
@@ -393,11 +398,6 @@ data-get-started = <speechBlogLink>Kom igång med taligenkänning</speechBlogLin
 data-other-title = Andra röstdatamängder…
 data-other-goto = Gå till { $name }
 data-other-download = Ladda ner data
-data-other-librispeech-description = LibriSpeech är ett korpus på cirka 1000 timmar av 16Khz inläst från engelska ljudböcker från LibriVox-projektet.
-data-other-ted-name = TED-LIUM korpus
-data-other-ted-description = TED-LIUM-korpuset gjordes av föredrag och deras transkriptioner tillgängliga från TED-webbplatsen.
-data-other-voxforge-description = VoxForge skapades för att samla transkriberat tal för användning med fria och öppna språkigenkänningsmotorer.
-data-other-tatoeba-description = Tatoeba är en stor databas med meningar, översättningar och talat språk för användning i språk inlärning. Denna nerladdning innehåller pratad engelska inspelad av/från deras gemenskap.
 data-bundle-button = Ladda ner Dataset-paket
 data-bundle-description = Common Voice data plus alla andra röstdatamängder ovan.
 license = Licens: <licenseLink>{ $license }</licenseLink>
@@ -413,6 +413,56 @@ review-rerecord = Spela in igen
 review-cancel = Avbryt inskickning
 review-keep-recordings = Behåll inspelningarna
 review-delete-recordings = Ta bort mina inspelningar
+
+## New Datasets Page
+
+datasets-headline = Vi skapar en flerspråkig röstinspelning med öppen källkod som alla kan använda för att träna röstbaserade applikationer.
+datasets-positioning =
+    Vi tror att stora, allmänt tillgängliga röstdatamängder kommer att främja innovation och hälsosam kommersiell konkurrens i maskinlärande baserad talteknik.
+    
+    Common Voices flerspråkiga datamängd är redan den största offentligt tillgängliga röstdatamängden av sitt slag, men den är inte den enda.
+    
+    Titta på den här sidan som referensnav för andra datakällor med öppen källkod och, eftersom Common Voice fortsätter att växa, ett hem för våra uppdateringar.
+language = Språk
+# File size in gigabytes
+size = Storlek
+validated-hr-total = Totalt validerade timmar
+overall-hr-total = Totalt antal timmar
+cv-license = Licens
+audio-format = Ljudformat
+number-of-voices = Antal röster
+splits = Uppdelning
+email-to-download = Ange e-postadress för nedladdning
+why-email = <b>Varför en e-postadress?</b> Vi kanske behöver kontakta dig i framtiden om ändringar i datamängden, en e-postadress ger oss en kontaktmöjlighet.
+confirm-size = Du är beredd att initiera en nedladdning av <b>{ $size }</b>
+size-gigabyte = GB
+size-megabyte = MB
+confirm-no-identify = <b>Du godkänner</b> att du inte försöker bestämma talarnas identitet i Common Voice-datamängden
+download-language = Ladda ner { $language }
+validated-hours = Validerade timmar
+recorded-hours = Inspelade timmar
+whats-inside = Vad finns i Common Voice-datamängd?
+dataset-description-hours =
+    Varje post i datamängden består av en unik MP3 och motsvarande textfil. Många av de <b>{ $total }</b> inspelade timmarna i datamängden innehåller även demografiska metadata som ålder, kön och accent som kan hjälpa till att träna noggrannheten för taligenkänningsmotorer.
+    
+    Datamängden består för närvarande av <b>{ $valid }</b> validerade timmar för <b>{ $languages }</b> språk, men vi lägger alltid till fler röster och språk. Ta en titt på vår <languagesLink>Språksida</languagesLink> för att begära ett språk eller börja bidra.
+want-dataset-update = Vill du ha uppdateringar om när vi släpper en ny version av Common Voice-datamängd? Prenumerera på vårt nyhetsbrev.
+subscribe = Prenumerera
+get-started-speech = Kom igång med taligenkänning
+other-datasets = Andra röstdatamängder
+feedback-q = Har du feedback?
+deepspeech-info = Common Voice-datamängd kompletterar Mozillas taligenkännande motor Deep Voice (öppen källkod), som du kan använda för att bygga taligenkänningsprogram. Läs vår <githubLink>Github-översikt</githubLink> eller gå med i <discourseLink>DeepSpeech Discourse</discourseLink> för att lära dig hur du kommer igång.
+common-voice-info = Har du frågor om Common Voice? Gå med i vårt <discourseLink>Discourse forum</discourseLink>.
+data-other-librispeech-description = LibriSpeech är ett korpus på cirka 1000 timmar av 16Khz inläst från engelska ljudböcker från LibriVox-projektet.
+data-other-ted-name = TED-LIUM korpus
+data-other-ted-description = TED-LIUM-korpuset gjordes av föredrag och deras transkriptioner tillgängliga från TED-webbplatsen.
+data-other-voxforge-description = VoxForge skapades för att samla transkriberat tal för användning med fria och öppna språkigenkänningsmotorer.
+data-other-tatoeba-description = Tatoeba är en stor databas med meningar, översättningar och talat språk för användning i språk inlärning. Denna nerladdning innehåller pratad engelska inspelad av/från deras gemenskap.
+your-feedback = Har du idéer om hur vi kan göra Common Voice-datamängd bättre? Låt oss veta på Discourse
+go-discourse = Gå till Discourse
+missing-language = Återspeglas inte ditt språk i datamängden? För att begära ett språk, gå till vår språksida.
+go-languages-page = Gå till språksidan
+ready-to-validate = Är du redo för att hjälpa till att validera meningar?
 
 ## Download Modal
 
@@ -553,4 +603,8 @@ keep = Behåll
 remove = Ta bort
 keep-info = Dina anonyma röstinspelningar förblir i Common Voice datamängd. När du har raderat din profil kan du inte längre skicka in en begäran om att ta bort dina inspelningar från datamängden
 remove-info = Vi kommer att granska din begäran om att ta bort dina röstinspelningar från datamängden. Om din förfrågan godkänns kontaktar vi dem som har laddat ner datamängden och begär att de även tar bort dina röstinspelningar.
+why-delete-recordings =
+    Vanliga röstinspelningar används av akademiker, småföretag och röstigenkänningsentusiaster för att hjälpa till att träna och växa offentligt tillgängliga resurser som röstmodeller.
+    
+    Kan du låta oss veta varför du vill att dina inspelningar raderas?
 profile-form-delete = Ta bort profil

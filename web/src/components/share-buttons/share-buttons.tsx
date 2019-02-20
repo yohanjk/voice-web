@@ -4,10 +4,12 @@ import {
   withLocalization,
 } from 'fluent-react/compat';
 import * as React from 'react';
+import { useRef } from 'react';
 import { connect } from 'react-redux';
 import { trackSharing } from '../../services/tracker';
 import { Notifications } from '../../stores/notifications';
 import { FontIcon } from '../ui/icons';
+import { localeConnector, LocalePropsFromState } from '../locale-helpers';
 
 import './share-buttons.css';
 
@@ -17,66 +19,57 @@ interface PropsFromDispatch {
   addNotification: typeof Notifications.actions.add;
 }
 
-class ShareButtons extends React.Component<
-  LocalizationProps & PropsFromDispatch
-> {
-  shareURLInputRef: { current: HTMLInputElement | null } = React.createRef();
+type Props = LocalizationProps & PropsFromDispatch & LocalePropsFromState;
 
-  private copyShareURL = () => {
-    this.shareURLInputRef.current.select();
-    document.execCommand('copy');
-    trackSharing('link');
+function ShareButtons({ addNotification, getString, locale }: Props) {
+  const encodedShareText = encodeURIComponent(
+    getString('share-text', { link: SHARE_URL })
+  );
+  const shareURLInputRef = useRef(null);
 
-    this.props.addNotification(
-      <React.Fragment>
-        <FontIcon type="link" className="icon" />{' '}
-        <Localized id="link-copied">
-          <span />
-        </Localized>
-      </React.Fragment>
-    );
-  };
+  return (
+    <React.Fragment>
+      <button
+        id="link-copy"
+        className="share-button"
+        onClick={() => {
+          shareURLInputRef.current.select();
+          document.execCommand('copy');
+          trackSharing('link', locale);
 
-  render() {
-    const encodedShareText = encodeURIComponent(
-      this.props.getString('share-text', { link: SHARE_URL })
-    );
-    return (
-      <React.Fragment>
-        <button
-          id="link-copy"
-          className="share-button"
-          onClick={this.copyShareURL}>
-          <input
-            type="text"
-            readOnly
-            value={SHARE_URL}
-            ref={this.shareURLInputRef}
-          />
-          <FontIcon type="link" />
-        </button>
-        <a
-          className="share-button"
-          href={'https://twitter.com/intent/tweet?text=' + encodedShareText}
-          target="_blank"
-          rel="noopener noreferrer"
-          onClick={() => trackSharing('twitter')}>
-          <FontIcon type="twitter" />
-        </a>
-        <a
-          className="share-button"
-          href={
-            'https://www.facebook.com/sharer/sharer.php?u=' +
-            encodeURIComponent(SHARE_URL)
-          }
-          target="_blank"
-          rel="noopener noreferrer"
-          onClick={() => trackSharing('facebook')}>
-          <FontIcon type="facebook" />
-        </a>
-      </React.Fragment>
-    );
-  }
+          addNotification(
+            <React.Fragment>
+              <FontIcon type="link" className="icon" />{' '}
+              <Localized id="link-copied">
+                <span />
+              </Localized>
+            </React.Fragment>
+          );
+        }}>
+        <input type="text" readOnly value={SHARE_URL} ref={shareURLInputRef} />
+        <FontIcon type="link" />
+      </button>
+      <a
+        className="share-button"
+        href={'https://twitter.com/intent/tweet?text=' + encodedShareText}
+        target="_blank"
+        rel="noopener noreferrer"
+        onClick={() => trackSharing('twitter', locale)}>
+        <FontIcon type="twitter" />
+      </a>
+      <a
+        className="share-button"
+        href={
+          'https://www.facebook.com/sharer/sharer.php?u=' +
+          encodeURIComponent(SHARE_URL)
+        }
+        target="_blank"
+        rel="noopener noreferrer"
+        onClick={() => trackSharing('facebook', locale)}>
+        <FontIcon type="facebook" />
+      </a>
+    </React.Fragment>
+  );
 }
 
 export default connect<void, PropsFromDispatch>(
@@ -84,4 +77,4 @@ export default connect<void, PropsFromDispatch>(
   {
     addNotification: Notifications.actions.add,
   }
-)(withLocalization(ShareButtons));
+)(localeConnector(withLocalization(ShareButtons)));

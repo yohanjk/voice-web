@@ -50,6 +50,7 @@ fr = French
 fy-NL = Frisian
 ga-IE = Irish
 he = Hebrew
+hr = Croatian
 hsb = Sorbian, Upper
 hu = Hungarian
 ia = Interlingua
@@ -81,6 +82,7 @@ pt-BR = Portuguese (Brazil)
 rm-sursilv = Romansh Sursilvan
 ro = Romanian
 ru = Russian
+rw = Kinyarwanda
 sah = Sakha
 sc = Sardinian
 sk = Slovak
@@ -186,6 +188,7 @@ x-years-short =
 help-make-dataset = Help us build a high quality, publicly open dataset
 profile-not-required = Having a profile is not required to contribute though it is helpful
 sign-up-account = Sign up for an account
+email-subscription-title = sign up for email updates
 
 ## Account Benefits
 benefits = Benefits
@@ -246,8 +249,10 @@ english = English
 ## ProfileForm
 profile-form-username =
     .label = User Name
-profile-form-language =
-    .label = Language
+profile-form-native-language =
+    .label = Native Language
+profile-form-additional-language =
+    .label = Additional Language
 profile-form-accent =
     .label = Accent
 profile-form-age =
@@ -408,11 +413,6 @@ data-get-started = <speechBlogLink>Get Started with Speech Recognition</speechBl
 data-other-title = Other voice datasets…
 data-other-goto = Go to { $name }
 data-other-download = Download Data
-data-other-librispeech-description = LibriSpeech is a corpus of approximately 1000 hours of 16Khz read English speech derived from read audiobooks from the LibriVox project.
-data-other-ted-name = TED-LIUM Corpus
-data-other-ted-description = The TED-LIUM corpus was made from audio talks and their transcriptions available on the TED website.
-data-other-voxforge-description = VoxForge was set up to collect transcribed speech for use with Free and Open Source Speech Recognition Engines.
-data-other-tatoeba-description = Tatoeba is a large database of sentences, translations, and spoken audio for use in language learning. This download contains spoken English recorded by their community.
 data-bundle-button = Download Dataset Bundle
 data-bundle-description = Common Voice data plus all other voice datasets above.
 license = License: <licenseLink>{ $license }</licenseLink>
@@ -429,6 +429,55 @@ review-rerecord = Re-record
 review-cancel = Cancel Submission
 review-keep-recordings = Keep the recordings
 review-delete-recordings = Delete my recordings
+
+## New Datasets Page
+datasets-headline = We’re building an open source, multi-language dataset of voices that anyone can use to train speech-enabled applications.
+datasets-positioning =
+    We believe that large, publicly available voice datasets will foster innovation and healthy commercial competition in machine-learning based speech technology.
+
+    Common Voice’s multi-language dataset is already the largest publicly available voice dataset of its kind, but it’s not the only one.
+
+    Look to this page as a reference hub for other open source voice datasets and, as Common Voice continues to grow, a home for our release updates.
+language = Language
+# File size in gigabytes
+size = Size
+validated-hr-total = Validated Hr. Total
+overall-hr-total = Overall Hr. Total
+cv-license = License
+audio-format = Audio Format
+number-of-voices = Number of Voices
+splits = Splits
+email-to-download = Enter Email to Download
+why-email = <b>Why an email?</b> We may need to contact you in the future about changes to the dataset, an email provides us a point of contact.
+confirm-size = You are prepared to initiate a download of <b>{ $size }</b>
+size-gigabyte = GB
+size-megabyte = MB
+confirm-no-identify = <b>You agree</b> to not attempt to determine the identity of speakers in the Common Voice dataset
+download-language = Download { $language }
+validated-hours = Validated Hours
+recorded-hours = Recorded Hours
+whats-inside = What’s inside the Common Voice dataset?
+dataset-description-hours =
+        Each entry in the dataset consists of a unique MP3 and corresponding text file. Many of the <b>{ $total }</b> recorded hours in the dataset also include demographic metadata like age, sex, and accent that can help train the accuracy of speech recognition engines.
+
+        The dataset currently consists of <b>{ $valid }</b> validated hours in <b>{ $languages }</b> languages, but we’re always adding more voices and languages. Take a look at our <languagesLink>Languages page</languagesLink> to request a language or start contributing.
+want-dataset-update = Want updates when we release a new version of the Common Voice dataset? Subscribe to our newsletter.
+subscribe = Subscribe
+get-started-speech = Get Started with Speech Recognition
+other-datasets = Other Voice Datasets
+feedback-q = Have Feedback?
+deepspeech-info = The Common Voice dataset complements Mozilla’s open source voice recognition engine Deep Speech, which you can use to build speech recognition applications. Read our <githubLink>Github overview</githubLink> or join the <discourseLink>DeepSpeech Discourse</discourseLink> to learn how to get started.
+common-voice-info = Have questions about Common Voice? Join us on our <discourseLink>Discourse forum</discourseLink>.
+data-other-librispeech-description = LibriSpeech is a corpus of approximately 1000 hours of 16Khz read English speech derived from read audiobooks from the LibriVox project.
+data-other-ted-name = TED-LIUM Corpus
+data-other-ted-description = The TED-LIUM corpus was made from audio talks and their transcriptions available on the TED website.
+data-other-voxforge-description = VoxForge was set up to collect transcribed speech for use with Free and Open Source Speech Recognition Engines.
+data-other-tatoeba-description = Tatoeba is a large database of sentences, translations, and spoken audio for use in language learning. This download contains spoken English recorded by their community.
+your-feedback = Do you have ideas on how we can make the Common Voice dataset better? Let us know on Discourse
+go-discourse = Go to Discourse
+missing-language = Don’t see your language reflected in the Dataset? To request a language head over to our Languages page.
+go-languages-page = Go to Languages Page
+ready-to-validate = Ready to help validate sentences?
 
 ## Download Modal
 download-title = Your download has started.
@@ -559,4 +608,7 @@ keep = Keep
 remove = Remove
 keep-info = Your anonymous voice recordings will remain in the Common Voice dataset. Once you delete your profile you will no longer be able to submit a request to remove your recordings from the dataset
 remove-info = We will review your request to remove your voice recordings from the dataset. If your request is approved, we will contact those who have downloaded the dataset and request they remove your voice recordings as well.
+why-delete-recordings = Common Voice recordings are used by academics, small businesses, and voice recognition enthusiasts to help train and grow publicly available resources like voice models.
+
+    Can you let us know why you would like your recordings deleted?
 profile-form-delete = Delete Profile

@@ -95,11 +95,16 @@
         & .back {
             display: flex;
             justify-content: center;
+            align-items: center;
             width: 47px;
             height: 47px;
             background: var(--white);
             border-radius: 50%;
             box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.09);
+
+            [dir='rtl'] & {
+                transform: rotateY(180deg);
+            }
 
             @media (--md-up) {
                 width: 57px;
@@ -124,7 +129,7 @@
                 }
 
                 &:first-child {
-                    margin-right: 40px;
+                    margin-inline-end: 40px;
                 }
 
                 &.active {
@@ -386,6 +391,10 @@
 
             & svg {
                 margin-inline-start: 13px;
+
+                [dir='rtl'] & {
+                    transform: rotateY(180deg);
+                }
             }
         }
 
@@ -564,7 +573,7 @@
             margin-top: 30px;
             background: #ff4e5e;
             border: none;
-            box-shadow: 0 5px 10px color(#ff4e5e alpha(50%));
+            box-shadow: 0 5px 10px color-mod(#ff4e5e alpha(50%));
 
             &:hover {
                 color: var(--white);
@@ -621,7 +630,7 @@
 
         & kbd {
             border-radius: 4px;
-            border: solid 1px color(var(--black) alpha(5%));
+            border: solid 1px color-mod(var(--black) alpha(5%));
             margin-bottom: 10px;
             width: 57px;
             height: 57px;

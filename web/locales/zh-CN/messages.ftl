@@ -54,6 +54,7 @@ fr = 法语
 fy-NL = 弗里西语
 ga-IE = 爱尔兰语
 he = 希伯莱语
+hr = 克罗地亚语
 hsb = 上索布语
 hu = 匈牙利语
 ia = 国际语
@@ -85,6 +86,7 @@ pt-BR = 葡萄牙语（巴西）
 rm-sursilv = 罗曼什语（苏斯勒万）
 ro = 罗马尼亚语
 ru = 俄语
+rw = 卢旺达语
 sah = 萨哈语
 sc = 萨丁尼亚语
 sk = 斯洛伐克语
@@ -122,44 +124,44 @@ help = 帮助
 contact = 联系我们
 privacy = 隐私权
 terms = 使用条款
-cookies = Cookies
+cookies = Cookie
 faq = 常见问题
 content-license-text = 内容遵循<licenseLink>知识共享许可协议</licenseLink>进行授权
-share-title = 帮我们找到更多人来贡献声音！
-share-text = 帮助训练机器像真人一样说话，请在 { $link } 处贡献出您的声音
+share-title = 帮我们找人一起献声！
+share-text = 请到 { $link } 处贡献出您的声音，帮助我们教导机器人们是如何说话的。
 link-copied = 链接已复制
 back-top = 回到顶端
-logout = 退出
+logout = 退出登录
 
 ## Home Page
 
-home-title = Common Voice 项目是 Mozilla 的倡议，旨在帮助训练机器像真人一样说话。
-home-cta = 大胆发声，为此献声！
-wall-of-text-start = 语音应该是自然、人性化的。我们因此着迷于为我们的机器创造实用的语音技术。但要创造一个语音系统，需要大量的语音数据。
-wall-of-text-more-mobile = 大公司使用的大部分数据对大多数人来说都无法取得。我们认为这会扼杀创新，因而推出了 Common Voice 项目。这个项目旨在促进语音识别技术对每个人的开放。
-wall-of-text-more-desktop = 现在，您可以贡献出您的声音，帮助我们建立一个开源的语音数据库，任何人都可以使用它来为设备和网络制作创新的应用程序。<lineBreak></lineBreak> 朗读一个句子以帮助计算机学习真人说话。复查其他贡献者的工作以提高质量。就这么简单!
+home-title = Common Voice 项目是 Mozilla 发起的倡议，旨在帮助教会机器真人的说话方式。
+home-cta = 有话在此大声说！
+wall-of-text-start = 语音是自然的、有人性的。这也是为什么我们希望为机器建立可用的语音技术。但要创造一个语音系统，需要大量的语音数据。
+wall-of-text-more-mobile = 大部分由大公司持有的数据，并未开放给公众使用。我们认为这会扼杀创新，因而推出了 Common Voice 项目，让语音识别技术的大门对每个人开放。
+wall-of-text-more-desktop = 现在，您可以贡献出您的声音，帮助我们建立一个开源的语音数据库，任何人都可以使用它来为设备和网络制作创新的应用程序。<lineBreak></lineBreak> 只要朗读一段文字，即可帮助机器了解人们如何说话。您也可以复查其他贡献者的工作以提高质量。就这么简单!
 wall-of-text-first = 语音应该是自然、人性的。我们因此着迷于为我们的机器创造实用的语音技术。但要创造一个语音系统，需要大量的语音数据。
-wall-of-text-second = 大公司使用的大部分数据对大多数人来说都无法取得。我们认为这会扼杀创新，因而推出了 Common Voice 项目。这个项目旨在促进语音识别对所有人的开放。
-show-wall-of-text = 了解更多
+wall-of-text-second = 大部分由大公司持有的数据，并未开放给公众使用。我们认为这会扼杀创新，因而推出了 Common Voice 项目，让语音识别技术的大门对每个人开放而无障碍。
+show-wall-of-text = 详细了解
 help-us-title = 帮助我们验证语句！
-help-us-explain = 请点击播放，仔细聆听并告诉我们：他们是否准确地说出了下面的句子？
+help-us-explain = 请点击播放，听一听，然后告诉我们：他们正确说出了下面的句子吗？
 no-clips-to-validate = 看来这个语言没有任何片段可听。请帮助我们录下一些片段。
 vote-yes = 是
 vote-no = 否
 toggle-play-tooltip = 按下 { shortcut-play-toggle } 即可切换播放模式
 speak-subtitle = 贡献出您的声音
-speak-paragraph = 录制语音片段是构建我们的开放数据集不可缺少的组成部分；有些人表示这还很有趣。
-speak-goal-text = 已录制片段
-listen-subtitle = 帮助我们验证语音
-listen-paragraph = 验证贡献的片段对于 Common Voice 任务同样重要。聆听并帮助我们创建高质量的开源语音数据。
-listen-goal-text = 已验证片段
+speak-paragraph = 录制语音片段是构建我们的开放数据集不可缺少的组成部分；有人说这蛮好玩。
+speak-goal-text = 已录制片段数
+listen-subtitle = 帮助我们验证其他人的录音
+listen-paragraph = 验证别人录下的语音片段，对 Common Voice 的使命同样重要。听一听，帮助我们创建高质量的开源语音数据。
+listen-goal-text = 已验证片段数
 hours-recorded = 已录制小时数
 hours-validated = 已验证小时数
 voices-online = 目前上线的语音
 todays-progress = 本日进度
 help-reach-goal = 帮助我们达成 { $goal }
 read-terms-q = 您阅读过我们的使用条款了吗？
-ready-to-record = 准备好贡献您的声音了吗？
+ready-to-record = 准备好捐出您的声音了吗？
 all-locales = 全部
 today = 今天
 x-weeks-short =
@@ -177,11 +179,12 @@ x-years-short =
 help-make-dataset = 帮助我们构建高质量、可公开使用的数据集
 profile-not-required = 不需创建个人资料即可贡献，但如果有的话会更有帮助
 sign-up-account = 注册账号
+email-subscription-title = 订阅邮件更新
 
 ## Account Benefits
 
 benefits = 好处
-rich-data = 提供一些人口统计数据后，可让您提交的数据更加丰富。我们会在公开录音文件前，将这些统计数据去识别化。
+rich-data = 提供一些人口统计数据后，可让您提交的数据更加丰富立体。我们会在公开录音文件前，将这些统计数据去识别化。
 improve-audio = 个人资料可帮助改善进行语音识别准确度训练时的音频数据。
 keep-track = 记录您的进度，以及各种语言的统计指标。
 compare-progress = 看看您的进度与世界各地的其他贡献者相比如何？
@@ -241,8 +244,10 @@ english = 英语
 
 profile-form-username =
     .label = 用户名
-profile-form-language =
-    .label = 语言
+profile-form-native-language =
+    .label = 母语
+profile-form-additional-language =
+    .label = 附加语言
 profile-form-accent =
     .label = 口音
 profile-form-age =
@@ -322,7 +327,7 @@ faq-is-goal-assistant-q = Common Voice 的目标是要构建语音助手吗？
 faq-is-goal-assistant-a = Common Voice 数据集的目标是使世界上的任何人都能构建语音识别、声纹识别，以及任何其他需要语音数据的应用。语音助手只是您可以使用其构建的众多应用类型之一。
 faq-do-want-native-q = 某语言不是我的母语而且说话带有口音，你们需要这样的语音吗？
 faq-do-want-native-a = 是的，而且我们特别想要您的声音！ Common Voice 的目标之一就是收集尽可能多的不同口音，让语音识别服务能适用于每个人。这意味着非母语人士的贡献尤为重要。
-faq-why-different-speakers-q = 为什么每种语言需要这么多不同的说话者？
+faq-why-different-speakers-q = 为什么你们需要这么多会说某种语言的人？
 faq-why-different-speakers-a =
     大多数语音数据库的语音来源偏重于某一特定人群，造成结果偏向于<articleLink>男性与中产阶级</articleLink>。而在训练数据集中，代表性不足的口音与方言往往会与被边缘化的人群相关联。许多机器也很难理解女性的声音。
     这就是为何我们的语音数据库应该海纳百川，收集各种语音！
@@ -377,17 +382,12 @@ data-download-yes = 是
 data-download-deny = 否
 data-download-license = 许可协议：<licenseLink>CC-0</licenseLink>
 data-download-modal = 将下载 <size>{ $size }GB</size> 的文件，要继续吗？
-data-subtitle = 我们正在建立一个开放且公开的语音数据集，每个人都可以使用它来训练语音应用程序。
+data-subtitle = 我们正在构建一组开放且可公开使用的语音数据集，每个人都可以使用它来训练语音应用程序。
 data-explanatory-text = 我们相信，大型和公开的语音数据集将促进基于机器学习的语音技术的创新和健康的商业竞争。这是一项全球性的努力，我们邀请所有人参加。我们的目标是帮助语音技术更具包容性，反映世界各地声音的多样性。
 data-get-started = <speechBlogLink>开始进行语音识别</speechBlogLink>
 data-other-title = 其他语音数据集…
 data-other-goto = 前往 { $name }
 data-other-download = 下载数据
-data-other-librispeech-description = Librispeech 是从 Librivox 项目中得到的大约 1000 小时的 16khz 有声读物的英文语音语料库。
-data-other-ted-name = TED-LIUM 语料库
-data-other-ted-description = TED-LIUM 语料库由在 TED 网站上提供的讲话音频和转录文字制作而成。
-data-other-voxforge-description = Voxforge 被设计来收集讲话转录文本，以供自由与开放源代码的语音识别引擎使用。
-data-other-tatoeba-description = Tatoeba 是一个用于语言学习的句子、翻译和口语音频的大型数据库。此下载包含由其社区记录的所有口语。
 data-bundle-button = 批量下载数据集
 data-bundle-description = Common Voice 数据加上所有其他的语音数据集。
 license = 许可协议：<licenseLink>{ $license }</licenseLink>
@@ -403,6 +403,56 @@ review-rerecord = 重新录音
 review-cancel = 取消提交
 review-keep-recordings = 保留录音
 review-delete-recordings = 删除我的录音
+
+## New Datasets Page
+
+datasets-headline = 我们正在构建一组开源、多语言的语音数据集，让任何人都可以用来开发语音相关的应用。
+datasets-positioning =
+    我们相信一组大型、可公开使用的语音数据集，将可促进基于机器学习的语音技术的创新，与健康的商业竞争。
+    
+    Common Voice 的多语言数据集已经成为最大的公开语音数据集，但不是唯一的一组。
+    
+    您可在此页面找到其他的开源语音数据集。随着 Common Voice 不断成长，我们也会在此处发布更新信息。
+language = 语言
+# File size in gigabytes
+size = 大小
+validated-hr-total = 总验证小时数
+overall-hr-total = 总综合小时数
+cv-license = 许可协议
+audio-format = 音频格式
+number-of-voices = 语音数量
+splits = 分割
+email-to-download = 输入电子邮件地址进行下载
+why-email = <b>为什么需要电子邮件地址?</b>未来我们可能会联系您，提供数据集的相关更新信息。 邮件地址可作为我们联系您的方式。
+confirm-size = 您将下载 <size>{ $size }GB</size> 的文件
+size-gigabyte = GB
+size-megabyte = MB
+confirm-no-identify = <b>您同意</b>不试图去确定 Common Voice 数据集中任何说话者的身份
+download-language = 下载 { $language }
+validated-hours = 已验证小时数
+recorded-hours = 已录制小时数
+whats-inside = Common Voice 数据集里面有什么？
+dataset-description-hours =
+    数据集中的每一条都包含了一组独立 MP3 录音及相应的文字文件。数据集所记录的 <b>{ $total }</b> 小时的录音中，有许多条数据同时包含了年龄、性别、口音等人口统计元数据，能够训练语音识别引擎提升其准确性。
+    
+    该数据集当前有 <b>{ $valid }</b> 小时，<b>{ $languages }</b> 种语言的语音数据，但我们在持续添加更多的语音数据和更多的语言。前往我们的<languagesLink>语言页</languagesLink>请求加入更多的语言或开始做出贡献。
+want-dataset-update = 想要在我们发布新版本 Common Voice 数据集时得到通知？请订阅我们的新闻通讯。
+subscribe = 订阅
+get-started-speech = 语音识别入门
+other-datasets = 其他语音数据集
+feedback-q = 有反馈要提供？
+deepspeech-info = Common Voice 数据集与 Mozilla 的开源语音识别引擎 Deep Speech 相辅相成，您可以使用其构建语音识别应用程序。您可以阅读我们的 <githubLink>Github 概述</githubLink>或加入<discourseLink> DeepSpeech Discourse</discourseLink> 了解如何入门。
+common-voice-info = 对 Common Voice 有疑问？请加入我们的 <discourseLink>Discourse 论坛</discourseLink>。
+data-other-librispeech-description = Librispeech 是从 Librivox 项目中得到的大约 1000 小时的 16khz 有声读物的英文语音语料库。
+data-other-ted-name = TED-LIUM 语料库
+data-other-ted-description = TED-LIUM 语料库由在 TED 网站上提供的讲话音频和转录文字制作而成。
+data-other-voxforge-description = Voxforge 被设计来收集讲话转录文本，以供自由与开放源代码的语音识别引擎使用。
+data-other-tatoeba-description = Tatoeba 是一个用于语言学习的句子、翻译和口语音频的大型数据库。此下载包含由其社区记录的所有口语。
+your-feedback = 您有任何可以让 Common Voice 数据集变得更好的想法吗？欢迎到 Discourse 告诉我们
+go-discourse = 前往 Discourse
+missing-language = 未在数据集中看到您的语言？请到语言页请求加入新语言。
+go-languages-page = 前往语言页
+ready-to-validate = 准备好帮助验证语句了吗？
 
 ## Download Modal
 
@@ -452,7 +502,7 @@ total-hours = 总小时数
 ## New Contribution
 
 action-click = 点击
-action-tap = 点选
+action-tap = 点按
 contribute = 参与贡献
 listen = 聆听
 skip = 跳过
@@ -536,4 +586,8 @@ keep = 保留
 remove = 移除
 keep-info = 您的录音将匿名保留在 Common Voice 数据集中。删除个人资料后，就无法再要求从数据集删除
 remove-info = 我们将审核您从数据集中删除录音的请求。如果您的请求获得批准，我们将会联系已下载数据集的用户，并请他们也删除您的录音。
+why-delete-recordings =
+    学术界、小型企业与语音识别爱好者会使用 Common Voice 的录音片段来帮助训练、发展语音模型等公共资源。
+    
+    能让我们知道您为什么想要删除录音片段吗？
 profile-form-delete = 删除用户资料

@@ -17,8 +17,11 @@ indicates-required = * indica un campo obligatori
 
 ## Languages
 
+ab = Abcaso
 ace = Acehnese
+ady = Adigue
 af = Afrikaans
+am = Amharico
 an = Aragonese
 ar = Arabe
 as = Assamese
@@ -37,6 +40,7 @@ cy = Gallese
 da = Danese
 de = Germano
 dsb = Sorbio, alte
+dv = Maldiviano
 el = Greco
 en = Anglese
 eo = Esperanto
@@ -65,8 +69,10 @@ kpv = Komi-Zyriano
 kw = Cornico
 ky = Kirghiso
 mdf = Moksha
-mk = Macedonio
+mhr = Mari oriental
+mk = Macedone
 mn = Mongol
+mrj = Mari occidental
 myv = Erzya
 nb-NO = Norvegiano Bokmål
 ne-NP = Nepalese
@@ -91,10 +97,13 @@ te = Telugu
 th = Thai
 tr = Turco
 tt = Tataro
+uby = Ubykh
+udm = Udmurte
 uk = Ukrainiano
 ur = Urdu
 uz = Uzbek
 vi = Vietnamese
+vot = Votico
 zh-CN = Chinese (China)
 zh-HK = Chinese (Hong Kong)
 zh-TW = Chinese (Taiwan)
@@ -236,8 +245,10 @@ english = anglese
 
 profile-form-username =
     .label = Nomine de usator
-profile-form-language =
-    .label = Lingua
+profile-form-native-language =
+    .label = Lingua native
+profile-form-additional-language =
+    .label = Lingua additional
 profile-form-accent =
     .label = Accento
 profile-form-age =
@@ -369,11 +380,6 @@ data-get-started = <speechBlogLink>Comenciar con le Recognition de voce</speechB
 data-other-title = Altere collectiones de datos de voce…
 data-other-goto = Ir a { $name }
 data-other-download = Discargar datos
-data-other-librispeech-description = LibriSpeech es un corpus de circa 1000 horas de anglese parlate a 16Khz derivate ab la lectura de audio-libros ab le projecto LibriVox.
-data-other-ted-name = Corpus de TED-LIUM
-data-other-ted-description = Le corpus de TED-LIUM esseva facite ab  audio e lor transcriptiones disponibile sur le sito web de TED.
-data-other-voxforge-description = VoxForge esseva create pro colliger voces transcribite a usar con motores de recognition de voce libere e open-source.
-data-other-tatoeba-description = Tatoeba es un grande base de datos de phrases, traductiones, e audio parlate a usar in apprendimento de linguas.Iste discarga contine anglese parlate registrate per lor communitates.
 data-bundle-button = Discargar le pacco del collection de datos
 data-bundle-description = Le datos de Common Voice plus tote le altere collectiones de datos vocal precedente.
 license = Licentia: <licenseLink>{ $license }</licenseLink>
@@ -389,6 +395,56 @@ review-rerecord = Registra de novo
 review-cancel = Cancellar invio
 review-keep-recordings = Retener le registrationes
 review-delete-recordings = Deler mi registrationes
+
+## New Datasets Page
+
+datasets-headline = Nos produce un collection de datos open-source e multe-lingua que omnes pote usar pro provar applicationes activate per le voce.
+datasets-positioning =
+    Nos crede que le grande e publicamente disponibile collectiones de datos vocal favori le innovation e le salubre competition commercial in le apprendimento automatic basate sur le technologia del voce.
+    
+    Le collection de datos multe-lingua de Common Voice es jam le plus grande collection de datos vocal de su sorta publicamente disponibile, ma illo non es sol.
+    
+    Reguarda a iste pagina como centro de referentia pro altere collectiones de datos vocal open-source e, como Common Voice continua a crescer, un pagina principal pro nostre actualisationes de version.
+language = Lingua
+# File size in gigabytes
+size = Dimension
+validated-hr-total = Horas validate Total
+overall-hr-total = Horas total
+cv-license = Licentia
+audio-format = Formato audio
+number-of-voices = Numero de voces
+splits = Cesuras
+email-to-download = Insere email a discargar
+why-email = <b>Perque un email?</b> Nos pote deber continger te in le futuro re cambios <t0/>al collection de datos, un email forni nos un puncto de contacto.
+confirm-size = Tu es preste a initiar un discargamento de <b>{ $size }</b>
+size-gigabyte = GB
+size-megabyte = MB
+confirm-no-identify = <b>Tu concorda</b> de non tentar de determinar le identitate del parlantes in le collection de datos de Common Voice
+download-language = Discargar { $language }
+validated-hours = Horas validate
+recorded-hours = Horas registrate
+whats-inside = Que es intra le collection de datos de Common Voice?
+dataset-description =
+    Cata entrata in le collection de datos consiste solo de un MP3 e del file de texto correspondente. Multe del <b>{ $horas }</b> horas registrate in le collection de datos alsi include demographic metadatos como etate, sexo e accento, que pote adjutar a maestrar le precision del motores de recognition del voce.
+    
+    Le collection de datos actualmente consiste de <b>{ $horas }</b> horas validate in <b>{ $languageCount }</b> linguas, ma nos adde sempre altere voces e linguas. Perspice nostre <languagesLink>Pagina del linguas</languagesLink> pro requirer un lingua o pro initiar a collaborar.
+want-dataset-update = Desira tu le actualisationes quando nos publica un nove version del collection de datos de Common Voice? Inscribe te a nostre littera de novas.
+subscribe = Subscriber se
+get-started-speech = Comenciar con le Recognition de voce
+other-datasets = Other Voice Datasets
+feedback-q = Ha tu commentario?
+deepspeech-info = Le collection de datos de Common Voice completa motor de recognition del voce open-source de Mozilla, Deep Speech, que tu pote usar pro crear applicationes de recognition de voce. Lege nostre <githubLink>panorama GitHub</githubLink> o junge te a <discourseLink>DeepSpeech Discourse</discourseLink> pro saper como comenciar.
+common-voice-info = Ha tu questiones re Common Voice? Junge te a nostre <discourseLink>foro de Discourse</discourseLink>.
+data-other-librispeech-description = LibriSpeech es un corpus de circa 1000 horas de anglese parlate a 16Khz derivate ab la lectura de audio-libros ab le projecto LibriVox.
+data-other-ted-name = Corpus de TED-LIUM
+data-other-ted-description = Le corpus de TED-LIUM esseva facite ab  audio e lor transcriptiones disponibile sur le sito web de TED.
+data-other-voxforge-description = VoxForge esseva create pro colliger voces transcribite a usar con motores de recognition de voce libere e open-source.
+data-other-tatoeba-description = Tatoeba es un grande base de datos de phrases, traductiones, e audio parlate a usar in apprendimento de linguas.Iste discarga contine anglese parlate registrate per lor communitates.
+your-feedback = Ha tu ideas sur como nos pote render le collection de datos de Common Voice melior? Face lo nos saper sur Discourse
+go-discourse = Va a Discourse
+missing-language = Non vide tu lingua reflectite in le Collection de datos? Si tu desira lo adder, accede a nostre Pagina del linguas.
+go-languages-page = Ir al pagina del linguas
+ready-to-validate = Preste a adjutar validar phrases?
 
 ## Download Modal
 
@@ -529,4 +585,5 @@ keep = Retener
 remove = Remover
 keep-info = Tu registrationes de voce anonyme remanera in le collection de datos de Common Voice. Un vice que tu dele tu profilo tu non sera plus capace a inviar un requesta de eliminar tu registrationes ab le collection de datos
 remove-info = Nos revidera tu requesta de eliminar tu registrationes de voce ab le collection de datos. Si tu requesta es approbate, nos contingera illes qui ha discargate le collection de datos e requirera les de remover tu registrationes vocal.
+why-delete-recordings = Le registrationes de Common Voice es utilisate per le academicos, le micre negotios e per le enthusiastas del recognition vocal pro adjutar a provar e facer crescer ressources publicamente disponibile como le modellos vocal.
 profile-form-delete = Deler le profilo

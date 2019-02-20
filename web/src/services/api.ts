@@ -54,6 +54,7 @@ export default class API {
     const response = await fetch(path, {
       method: method || 'GET',
       headers: finalHeaders,
+      credentials: 'same-origin',
       body: body
         ? body instanceof Blob
           ? body
@@ -64,6 +65,9 @@ export default class API {
       localStorage.removeItem(USER_KEY);
       location.reload();
       return;
+    }
+    if (response.status >= 400) {
+      throw new Error(await response.text());
     }
     return isJSON ? response.json() : response.text();
   }
