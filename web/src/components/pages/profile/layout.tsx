@@ -82,14 +82,14 @@ const Layout = ({ toLocaleRoute, user }: Props) => {
                 ? { icon: <UserIcon />, id: 'profile' }
                 : { icon: <UserPlusIcon />, id: 'build-profile' }),
             },
-            { route: avatarRoute, icon: <CameraIcon />, id: 'avatar' },
+            // { route: avatarRoute, icon: <CameraIcon />, id: 'avatar' },
             { route: goalsRoute, icon: <BarChartIcon />, id: 'goals' },
             { route: prefRoute, icon: <CogIcon />, id: 'settings' },
-            {
-              route: deleteRoute,
-              icon: <TrashIcon />,
-              id: 'profile-form-delete',
-            },
+            // {
+            //   route: deleteRoute,
+            //   icon: <TrashIcon />,
+            //   id: 'profile-form-delete',
+            // },
           ]
             .slice(0, user.account ? Infinity : 1)
             .map(({ route, icon, id }) => (
@@ -100,14 +100,14 @@ const Layout = ({ toLocaleRoute, user }: Props) => {
                 </Localized>
               </NavLink>
             ))}
-          {user.account && (
-            <a onClick={() => downloadData(user.account)} href="#">
-              <CloudIcon />
-              <Localized id="download-profile">
-                <span className="text" />
-              </Localized>
-            </a>
-          )}
+          {/*{user.account && (*/}
+          {/*<a onClick={() => downloadData(user.account)} href="#">*/}
+          {/*<CloudIcon />*/}
+          {/*<Localized id="download-profile">*/}
+          {/*<span className="text" />*/}
+          {/*</Localized>*/}
+          {/*</a>*/}
+          {/*)}*/}
         </div>
       </div>
       <div className="content">

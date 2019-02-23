@@ -48,31 +48,31 @@ const Footer = React.memo(({ locale }: LocalePropsFromState) => {
         <a
           id="contribute"
           target="_blank"
-          href="https://github.com/mozilla/voice-web"
+          href="https://github.com/yohanjk/voice-web"
           onClick={() => trackGlobal('github', locale)}>
           <GithubIcon />
           <div>GitHub</div>
         </a>
-        <div className="divider" />
-        <a
-          id="discourse"
-          target="blank"
-          href="https://discourse.mozilla-community.org/c/voice"
-          onClick={() => trackGlobal('discourse', locale)}>
-          <DiscourseIcon />
-          <div>Discourse</div>
-        </a>
-        <div className="divider" />
-        <TextButton
-          onClick={() => {
-            trackGlobal('contact', locale);
-            setShowContactModal(true);
-          }}>
-          <ContactIcon />
-          <Localized id="contact">
-            <div />
-          </Localized>
-        </TextButton>
+        {/*<div className="divider" />*/}
+        {/*<a*/}
+        {/*id="discourse"*/}
+        {/*target="blank"*/}
+        {/*href="https://discourse.mozilla-community.org/c/voice"*/}
+        {/*onClick={() => trackGlobal('discourse', locale)}>*/}
+        {/*<DiscourseIcon />*/}
+        {/*<div>Discourse</div>*/}
+        {/*</a>*/}
+        {/*<div className="divider" />*/}
+        {/*<TextButton*/}
+        {/*onClick={() => {*/}
+        {/*trackGlobal('contact', locale);*/}
+        {/*setShowContactModal(true);*/}
+        {/*}}>*/}
+        {/*<ContactIcon />*/}
+        {/*<Localized id="contact">*/}
+        {/*<div />*/}
+        {/*</Localized>*/}
+        {/*</TextButton>*/}
       </div>
       <div id="moz-links">
         <div className="logo-container">
@@ -97,12 +97,12 @@ const Footer = React.memo(({ locale }: LocalePropsFromState) => {
             <LocalizedLocaleLink id="terms" to={URLS.TERMS} />
           </div>
           <div>
-            <Localized id="cookies">
-              <a
-                target="_blank"
-                href="https://www.mozilla.org/en-US/privacy/websites/#cookies"
-              />
-            </Localized>
+            {/*<Localized id="cookies">*/}
+            {/*<a*/}
+            {/*target="_blank"*/}
+            {/*href="https://www.mozilla.org/en-US/privacy/websites/#cookies"*/}
+            {/*/>*/}
+            {/*</Localized>*/}
             <LocalizedLocaleLink id="faq" to={URLS.FAQ} />
           </div>
         </div>
@@ -117,9 +117,9 @@ const Footer = React.memo(({ locale }: LocalePropsFromState) => {
           </div>
         </div>
 
-        <div id="email-subscription">
-          <SubscribeNewsletter />
-        </div>
+        {/*<div id="email-subscription">*/}
+        {/*<SubscribeNewsletter />*/}
+        {/*</div>*/}
 
         <Localized id="back-top">
           <TextButton

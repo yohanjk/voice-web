@@ -185,7 +185,7 @@ class ProfilePage extends React.Component<Props, State> {
           saveAccount({
             ...pick(this.state, 'username', 'age', 'gender'),
             locales: this.state.locales.filter(l => l.locale),
-            visible: JSON.parse(this.state.visible.toString()),
+            visible: 0,
             client_id: user.userId,
           });
           this.setState({ isSaving: false });
@@ -250,18 +250,18 @@ class ProfilePage extends React.Component<Props, State> {
             />
           </Localized>
 
-          <Localized id="leaderboard-visibility" attrs={{ label: true }}>
-            <LabeledSelect
-              value={visible.toString()}
-              onChange={this.handleChangeFor('visible')}>
-              <Localized id="hidden">
-                <option value={0} />
-              </Localized>
-              <Localized id="visible">
-                <option value={1} />
-              </Localized>
-            </LabeledSelect>
-          </Localized>
+          {/*<Localized id="leaderboard-visibility" attrs={{ label: true }}>*/}
+          {/*<LabeledSelect*/}
+          {/*value={visible.toString()}*/}
+          {/*onChange={this.handleChangeFor('visible')}>*/}
+          {/*<Localized id="hidden">*/}
+          {/*<option value={0} />*/}
+          {/*</Localized>*/}
+          {/*<Localized id="visible">*/}
+          {/*<option value={1} />*/}
+          {/*</Localized>*/}
+          {/*</LabeledSelect>*/}
+          {/*</Localized>*/}
 
           <Localized id="profile-form-age" attrs={{ label: true }}>
             <LabeledSelect value={age} onChange={this.handleChangeFor('age')}>
@@ -297,14 +297,14 @@ class ProfilePage extends React.Component<Props, State> {
                   ))}
                 </LabeledSelect>
               </Localized>
-              <Localized id="profile-form-accent" attrs={{ label: true }}>
-                <LabeledSelect
-                  value={accent}
-                  onChange={this.handleAccentChangeFor(i)}>
-                  <option value="" />
-                  {ACCENTS[locale] && <Options>{ACCENTS[locale]}</Options>}
-                </LabeledSelect>
-              </Localized>
+              {/*<Localized id="profile-form-accent" attrs={{ label: true }}>*/}
+              {/*<LabeledSelect*/}
+              {/*value={accent}*/}
+              {/*onChange={this.handleAccentChangeFor(i)}>*/}
+              {/*<option value="" />*/}
+              {/*{ACCENTS[locale] && <Options>{ACCENTS[locale]}</Options>}*/}
+              {/*</LabeledSelect>*/}
+              {/*</Localized>*/}
             </React.Fragment>
           ))}
         </div>
@@ -331,12 +331,12 @@ class ProfilePage extends React.Component<Props, State> {
               </Tooltip>
 
               <div className="checkboxes">
-                <Localized id="keep-me-posted" attrs={{ label: true }}>
-                  <LabeledCheckbox
-                    onChange={this.handleChangeFor('sendEmails')}
-                    checked={sendEmails}
-                  />
-                </Localized>
+                {/*<Localized id="keep-me-posted" attrs={{ label: true }}>*/}
+                {/*<LabeledCheckbox*/}
+                {/*onChange={this.handleChangeFor('sendEmails')}*/}
+                {/*checked={sendEmails}*/}
+                {/*/>*/}
+                {/*</Localized>*/}
 
                 {!user.account && !isSubmitted && (
                   <React.Fragment>
